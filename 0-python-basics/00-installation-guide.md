@@ -6,3 +6,6 @@ https://gitforwindows.org/
 
 vscode:
 https://code.visualstudio.com/download
+
+Jupyter Notebook:
+https://jupyter.org/

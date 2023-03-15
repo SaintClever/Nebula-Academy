@@ -1,4 +1,4 @@
-Python variables
+# Variables
 
 In python there is no initialization of a variable when you assign a value a variable is created
 
