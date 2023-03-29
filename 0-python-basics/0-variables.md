@@ -1,6 +1,6 @@
 # Variables
 
-In python there is no initialization of a variable when you assign a value a variable is created
+In python there is no initialization of a variable; when you assign a value, a variable is created
 
 ```python
 # create a new string hello world
@@ -24,11 +24,11 @@ str = float("33.3")
 print(str)
 ```
 
-In all programming langauge data-type conversions is going to be one of your most utilized tool because data-types are the containers of data. Each data-type contains `methods` and `properties` to help you interact and manipulate the data
+In all programming langauges, converting data-types is going to be one of your most utilized tools, as data-types are the containers of data. Each data-type contains `methods` and `properties` that help you interact and manipulate the data.
 
-This first example showcases why paying attention to data-types is important. Imagine you are working to make the logic for an ATM machine. The users balance will be a float but the incoming input will be a string.
+This first example showcases why paying attention to data-types is important. Imagine you are working to make the logic for an ATM machine. The users balance will be a `float` but the incoming input will be a `string`.
 
-In programming if you add to a numeric data-type it does arithmitic, however if you add to a string it will append the values
+In programming if you add a number to a numeric data-type, it does arithmitic. If you add a numeric value to a string, it will append the values
 ```python
 # Create a variable for the users current bank balance
 bank_balance = 142.50
