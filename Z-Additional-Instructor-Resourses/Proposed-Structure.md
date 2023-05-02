@@ -38,7 +38,7 @@ Demonstrate Error Logging & Breakpoints
 
 3-Functional-Programming/  
 ├── 01-Introduction-to-Functional-Programming/ 
-Functions are versitile: explain some ideas of what it could be used for.
+Functions are versatile: explain some ideas of what it could be used for.
 ├── 02-Accumulation
 └── 03-Functional-Programming-Techniques/  
     └── Generator-Comprehensions
@@ -57,14 +57,14 @@ Functions are versitile: explain some ideas of what it could be used for.
 5-Data-Visualization/
 ├── 01-Intro-to-visualization
     └── MatPlotLib
-Integrate an API's data as visualization source in Jupter Notebooks
+Integrate an API's data as visualization source in Jupyter Notebooks
 
  
 
 6-Scraping/
 ├──  01-Web-Scraping-Basics
     └── Beautiful-Soup
-Scrape Scollar articles based on subject, send to openAI API for summary
+Scrape Google Scholar articles based on subject, send to openAI API for summary
 
  
 
