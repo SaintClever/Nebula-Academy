@@ -1,5 +1,6 @@
 Here's our completed Curriculum from our call. Please provide any input that you might have so we can make any necessary changes.
 120 hours including projects
+40 hours of projects
 80 hours instruction
 
  
@@ -11,8 +12,7 @@ Here's our completed Curriculum from our call. Please provide any input that you
 ├── 01-Introduction-to-Python/  
 │   └── Installation Guide
 ├── 02-Basic-data-types-variables-and-operators/  
-│   └── Variables Lecture  
-- [ ] Add Basic Data types
+│   └── Variables Lecture
 ├── 03-Conditional-statements-and-loops/  
 │   └── Control  
 ├── 04-Functions-and-modules/  
