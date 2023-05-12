@@ -8,18 +8,18 @@
 
 ### 1. Introduction
 
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> In this comprehensive course, you will be introduced to Python programming, one of the most versatile and widely-used programming languages in the world. The course consists of 120 hours in total, with 80 hours of instruction and 40 hours dedicated to hands-on projects. Our goal is to provide you with a solid foundation in Python and equip you with the skills and knowledge necessary to succeed in various domains of the software industry. We have designed a curriculum that covers a wide range of topics, from the basics of Python programming, data structures, and algorithms, to more advanced concepts such as functional programming and object-oriented programming. You will also gain practical experience with data visualization, web scraping, and working with APIs. 
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> In this course, you will be introduced to Python programming, a versatile and widely-used programming language throughout the world.  It's useful for building web API's, analyzing and visualizing data, creating artificial intelligence models, and much more.
 
-<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Throughout the course, we will emphasize the importance of hands-on learning, and you will have the opportunity to work on projects that simulate real-world applications. By the end of the course, you will have a strong understanding of Python and be ready to apply your new skills to various projects and tasks in your professional or personal life.
+<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>The course consists of 120 hours in total, with 80 hours of instruction and 40 hours dedicated to hands-on projects. Our goal is to provide you with a solid foundation in Python and intend to equip you with relevant skills and knowledge necessary to succeed in various domains of the software industry, as well as pursue further more advanced Python topics. We have designed a curriculum that covers a wide range of topics, from the basics of Python programming, data structures, and algorithms, to more advanced concepts such as functional programming and object-oriented programming. You will also gain practical experience with data visualization, web scraping, and working with APIs. Throughout you will have many opportunities to work on projects that simulate real-world applications. By the end of the course, you will have a strong understanding of Python and be ready to apply your new skills to various projects and tasks in your professional or personal life.
 
 > ***Importance of Leaning Python***
-   Python has established itself as a powerful and versatile programming language that is widely used in various industries. It has gained popularity due to its simplicity, readability, and extensive library support, making it an ideal choice for beginners and experienced developers alike.
+   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Python has gained popularity due to its simplicity, readability, and extensive library support, making it an ideal choice for beginners and experienced developers alike. As a general purpose language Python has been extended work with complex data in unique and meaningful ways. 
    >
-   >By learning Python, you open doors to numerous opportunities in the world of software development. Here are some reasons why Python is essential for developers:
+   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>By learning Python, you open doors to countless opportunities in the world of software development. Here are some reasons why Python is essential for developers:
 >
    - **Web Development**: Python provides excellent frameworks like Django, Flask, and FastAPI, enabling you to create robust web applications quickly and efficiently.
   > 
-   - **Data Analysis and Visualization**: With libraries like Pandas, NumPy, and Matplotlib, Python has become the go-to language for data analysis and visualization tasks, empowering you to make data-driven decisions.
+   - **Data Analysis and Visualization**: With libraries like Pandas, NumPy, and Matplotlib, Python has become the go-to language for data analysis and visualization tasks, empowering you to make data-driven decisions.  Python is also capable of interfacing with the languages R and MatLab, a possibility for data scientists and engineers to exploit.
    >
    - **Machine Learning and Artificial Intelligence**: Python offers powerful libraries like TensorFlow, PyTorch, and scikit-learn, making it a popular choice for building cutting-edge machine learning and artificial intelligence models.
    >
