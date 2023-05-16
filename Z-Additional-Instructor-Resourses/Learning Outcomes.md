@@ -43,6 +43,11 @@ Section: Understanding Basic Data Types, Variables and Operators
       Access individual characters in a string through indexing.
       Utilize basic string methods like len(), upper(), lower(), strip(), replace(), and split(), and employ web resources for additional methods.
       Manipulate strings using arithmetic operators, including concatenation and repetition.
+      - Understand the concept of string slicing to extract a portion of a string.
+      - Use string methods to manipulate the case, spacing, and other aspects of a string.
+      - Learn about special characters and their usage in Python strings.
+      - Understand the concept of raw strings and their usage.
+
     Numbers
       Differentiate between integers and floats.
       Perform mathematical operations on numbers using arithmetic operators.
@@ -51,6 +56,11 @@ Section: Understanding Basic Data Types, Variables and Operators
       Utilize the Math module for complex mathematical operations.
       Generate random numbers using the Random module.
       Work with infinite numbers using float and decimal modules, as well as the math module.
+      Understand the concept of integers and floating-point numbers.
+      Perform operations like addition, subtraction, multiplication, and division using arithmetic operators.
+      Use the modulo operator and understand its use cases.
+      Understand and implement exponentiation.
+      Create and manipulate infinite numbers.
 
 
   Lesson: Exploring Lists and Dictionaries 
