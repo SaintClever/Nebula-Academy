@@ -58,3 +58,4 @@ Understanding file paths is crucial to navigate directories effectively. There a
 By default, the Terminal doesn't show hidden files. These files usually start with a dot (`.`), for example, `.gitignore`. To view hidden files, use `ls -a`.
 
 By the end of this lesson, you should feel comfortable navigating GitHub and the Terminal, and understand their crucial role in programming and software development.
+
