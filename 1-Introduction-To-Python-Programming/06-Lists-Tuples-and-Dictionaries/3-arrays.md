@@ -1,6 +1,6 @@
-In Python, an array is a data structure that can hold a sequence of elements of the same type.
+In Python, an list is a data structure that can hold a sequence of elements of the same type.
 
-Arrays in Python are implemented using the `list` data type. A list is a collection of items enclosed in square brackets and separated by commas. For example:
+Lists in Python are implemented using the `list` data type. A list is a collection of items enclosed in square brackets and separated by commas. For example:
 
 ```python
 numbers = [1, 2, 3, 4, 5]

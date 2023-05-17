@@ -70,6 +70,9 @@ Section: Understanding Basic Data Types, Variables and Operators
       Access individual list elements through indexing.
       Modify a list using indexing and slicing.
       Check for the presence of an element in a list using in and not in operators.
+      Understand the concept of list mutability and the ability to modify an existing list element.
+      Learn how to add elements to a list using the 'append' method.
+      Understand how to use 'in' and 'not in' operators to check for the presence of an element in a list.
     Tuples
       Understand what a tuple is, how to create one, and how it differs from a list.
       Understand the concept of a tuple, its creation, and how it differs from a list.
