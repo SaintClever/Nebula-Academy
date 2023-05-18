@@ -1,56 +1,18 @@
 # Installation Guide for Python, Git Bash, VSCode, and Jupyter Notebook
 
-## Lecture Outline
+## 📚 Table of Contents
 
-1. **Introduction**
-   - Brief overview of each software
-   - Why they are essential for developers
-
-2. **Installing Python**
-   - **Windows**
-      - Downloading the installer
-      - Customizing the installation
-      - Setting environment variables
-   - **macOS**
-      - Downloading the installer
-      - Customizing the installation
-      - Verifying the installation
+- [Installing Python](#installing-python)
+  - [Windows](#windows)
+  - [macOS](#macos)
+- [Installing Git Bash (Windows only)](#installing-git-bash-windows-only)
+- [Installing Visual Studio Code (VSCode)](#installing-visual-studio-code-vscode)
+  - [Windows](#windows-1)
+  - [macOS](#macos-1)
+  - [Installing Code CLI tool](#installing-code-cli-tool)
 
 
-3. **Installing Git Bash (Windows only)**
-   - Downloading the installer
-   - Customizing the installation
-   - Verifying the installation
-
-4. **Installing Visual Studio Code (VSCode)**
-   - **Windows**
-      - Downloading the installer
-      - Customizing the installation
-      - Verifying the installation
-   - **macOS**
-      - Downloading the installer
-      - Customizing the installation
-      - Verifying the installation
-   - **Installing Code CLI tool**
-      - Accessing the command palette
-      - Installing the shell command
-
-5. **Installing Jupyter Notebook**
-   - Prerequisite: Python installation
-   - **Windows**
-      - Installing via pip
-      - Launching Jupyter Notebook
-   - **macOS**
-      - Installing via pip
-      - Launching Jupyter Notebook
-
-6. **Conclusion**
-   - Recap of installation processes
-   - Importance of keeping software up-to-date
-   - Encouragement to explore and utilize the tools
-
-
-## Introduction
+## ✅ Introduction
 
 In this lecture, we will guide you through the installation processes for Python, Git Bash, Visual Studio Code (VSCode), and Jupyter Notebook on Windows and macOS operating systems. These tools are essential for developers:
 
@@ -61,7 +23,7 @@ In this lecture, we will guide you through the installation processes for Python
 
 Together, these tools provide a solid foundation for writing, running, and managing code.
 
-## Installing Python
+## 💾 Installing Python
 
 Python is a popular, versatile programming language that is widely used in various fields, such as web development, data analysis, and machine learning.
 
@@ -76,7 +38,7 @@ Python is a popular, versatile programming language that is widely used in vario
  2. Run the installer and follow the prompts to complete the installation.
  3. Verify the installation by opening the Terminal and typing `python --version`. You should see the installed Python version.
 
-## Installing Git Bash (Windows only)
+## 💻 Installing Git Bash (Windows only)
 
 Git Bash is a Git command-line interface for Windows, providing a Unix-like shell to interact with Git repositories. It's required on Windows because the default Windows command prompt does not support the Unix-style commands used by Git. This is not necessary for macOS, as macOS includes a Unix-based terminal by default.
 
@@ -85,7 +47,7 @@ Git Bash is a Git command-line interface for Windows, providing a Unix-like shel
 3. Verify the installation by right-clicking in a folder and selecting "Git Bash Here." A Git Bash terminal window should open.
 
 
-## Installing Visual Studio Code (VSCode)
+## 🔵 Installing Visual Studio Code (VSCode)
 
    VSCode is a powerful, lightweight, and extensible code editor that supports various programming languages and tools.
 
