@@ -29,6 +29,12 @@ The roots of Python trace back to the late 1980s, thanks to Guido van Rossum, a 
 
 You might be surprised to learn that Python was not named after the large snake species, but after Monty Python's Flying Circus, a British comedy sketch series beloved by van Rossum. The series' playful spirit permeates Python's design philosophy, emphasizing readability and simplicity.
 
+<Image src="assets/PythonWatchingTV.jpg" width="65%" height="60%" alt="Python Watching Monty Python generated with the assistance of Canva's Text to Image Generator" title="Python Watching Monty Python" />
+
+>**Python Watching Monty Python** 
+🤖 *Created with assets generated from Canva's Text to Image Generator*
+
+
 Python's focus on simplicity, coupled with its comprehensive standard library, has led to its surge in popularity over the years. Developers appreciate Python's ability to express complex ideas in fewer lines of code compared to languages like C++ or Java.
 
 Python has undergone several significant updates since its inception, each introducing new features and enhancements. Python 2.0, released in 2000, brought revolutionary changes like list comprehensions, garbage collection, and Unicode support. In 2008, Python 3.0 was launched, heralding extensive modifications like improved Unicode functionality, a new I/O library, and various syntax tweaks.
