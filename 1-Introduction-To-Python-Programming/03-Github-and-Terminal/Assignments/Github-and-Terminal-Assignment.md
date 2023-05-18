@@ -25,6 +25,29 @@ python-notes/
 │   ├── 10-Error-handling-and-debugging
 │   └── Module-1-Project
 ├── 2-Data-Structures-And-Regex
+│   ├── 01-Working-with-Structured-Data
+│   ├── 02-Regular-Expressions
+│   └── Module-2-Project
+├── 3-Functional-Programming
+│   ├── 01-Introduction-to-Functional-Programming
+│   ├── 02-Lambda-Functions
+│   ├── 03-Map-Filter-and-Reduce
+│   ├── 04-Generator-Comprehension
+│   └── Module-3-Project
+├── 4-Object-Oriented-Programming
+│   ├── 01-Introduction-to-Object-Oriented-Programming
+│   ├── 02-Classes
+│   └── Module-4-Project
+├── 5-Full-Stack-Web-Development
+│   ├── 01-Backend
+│   ├── 02-Frontend
+│   └── Module-5-Project
+└── 6-Data-Vizualization-and-Browser-Automation
+    ├── 01-Browser-Automation
+    ├── 02-Visualization
+    └── Module-6-Project
+
+
 
 
 ```
