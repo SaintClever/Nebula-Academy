@@ -1,4 +1,4 @@
-## Your First Python Project on GitHub
+## 📝 Notes setup / Introduction to the terminal and Github
 
 **Objective**
 In this assignment, we're going to use Git and GitHub to start a Python project repository. You'll recreate a specific file structure, make modifications using commits, and then push those updates back to GitHub. 
@@ -12,7 +12,7 @@ Follow the steps below to complete this assignment:
 
 2.1 **Repos directory:** Make a Repos directory in your users/{your_username}
 
-2.2 **Clone the Repository:** Clone the new repository to your local system using the `git clone` command.
+2.2 **Clone the Repository:** Clone the new repository in your Repos directory to your local system using the `git clone` command.
 
 3. **Create File Structure:** Use the structure below as a guide to create your file structure:
 
