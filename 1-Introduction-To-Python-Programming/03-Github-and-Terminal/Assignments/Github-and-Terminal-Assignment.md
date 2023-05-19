@@ -6,9 +6,13 @@ In this assignment, we're going to use Git and GitHub to start a Python project 
 **Instructions**
 Follow the steps below to complete this assignment:
 
+
+
 1. **New Repository:** In GitHub, create a new repository called "python-notes".
 
-2. **Clone the Repository:** Clone the new repository to your local system using the `git clone` command.
+2.1 **Repos directory:** Make a Repos directory in your users/{your_username}
+
+2.2 **Clone the Repository:** Clone the new repository to your local system using the `git clone` command.
 
 3. **Create File Structure:** Use the structure below as a guide to create your file structure:
 
@@ -17,37 +21,36 @@ Follow the steps below to complete this assignment:
 ``` bash
 python-notes/
 ├── 1-Introduction-To-Python-Programming
-│   ├── 03-Github-and-Terminal
-│   ├── 04-Variables-and-Operators
-│   ├── 05-String-and-Numbers
-│   ├── 06-Lists-and-Dictionaries
-│   ├── 07-Conditional-statements-and-loops
-│   ├── 08-Functions-Modules-and-Dependencies
-│   ├── 09-User-Input-and-File-io
-│   ├── 10-Error-handling-and-debugging
-│   └── Module-1-Project
+│   ├── 03-Github-and-Terminal.ipynb
+│   ├── 04-Variables-and-Operators.ipynb
+│   ├── 05-String-and-Numbers.ipynb
+│   ├── 06-Lists-and-Dictionaries.ipynb
+│   ├── 07-Conditional-statements-and-loops.ipynb
+│   ├── 08-Functions-Modules-and-Dependencies.ipynb
+│   ├── 09-User-Input-and-File-io.ipynb
+│   └── 10-Error-handling-and-debugging.ipynb
+│   
 ├── 2-Data-Structures-And-Regex
-│   ├── 01-Working-with-Structured-Data
-│   ├── 02-Regular-Expressions
-│   └── Module-2-Project
+│   ├── 01-Working-with-Structured-Data.ipynb
+│   └── 02-Regular-Expressions.ipynb
+│   
 ├── 3-Functional-Programming
-│   ├── 01-Introduction-to-Functional-Programming
-│   ├── 02-Lambda-Functions
-│   ├── 03-Map-Filter-and-Reduce
-│   ├── 04-Generator-Comprehension
-│   └── Module-3-Project
+│   ├── 01-Introduction-to-Functional-Programming.ipynb
+│   ├── 02-Lambda-Functions.ipynb
+│   ├── 03-Map-Filter-and-Reduce.ipynb
+│   └── 04-Generator-Comprehension.ipynb
+│   
 ├── 4-Object-Oriented-Programming
-│   ├── 01-Introduction-to-Object-Oriented-Programming
-│   ├── 02-Classes
-│   └── Module-4-Project
+│   ├── 01-Introduction-to-Object-Oriented-Programming.ipynb
+│   └── 02-Classes.ipynb
+│   
 ├── 5-Full-Stack-Web-Development
-│   ├── 01-Backend
-│   ├── 02-Frontend
-│   └── Module-5-Project
+│   ├── 01-Backend.ipynb
+│   └── 02-Frontend.ipynb
+│   
 └── 6-Data-Vizualization-and-Browser-Automation
-    ├── 01-Browser-Automation
-    ├── 02-Visualization
-    └── Module-6-Project
+    ├── 01-Browser-Automation.ipynb
+    └── 02-Visualization.ipynb
 ```
 
 
