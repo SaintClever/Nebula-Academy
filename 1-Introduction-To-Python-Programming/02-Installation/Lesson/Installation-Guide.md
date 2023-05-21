@@ -2,14 +2,12 @@
 
 ## 📚 Table of Contents
 
-- [Installing Python](#installing-python)
-  - [Windows](#windows)
-  - [macOS](#macos)
-- [Installing Git Bash (Windows only)](#installing-git-bash-windows-only)
-- [Installing Visual Studio Code (VSCode)](#installing-visual-studio-code-vscode)
-  - [Windows](#windows-1)
-  - [macOS](#macos-1)
-  - [Installing Code CLI tool](#installing-code-cli-tool)
+- [Installation Guide for Python, Git Bash, VSCode, and Jupyter Notebook](#installation-guide-for-python-git-bash-vscode-and-jupyter-notebook)
+  - [📚 Table of Contents](#-table-of-contents)
+  - [✅ Introduction](#-introduction)
+  - [💾 Installing Python](#-installing-python)
+  - [💻 Installing Git Bash (Windows only)](#-installing-git-bash-windows-only)
+  - [🔵 Installing Visual Studio Code (VSCode)](#-installing-visual-studio-code-vscode)
 
 
 ## ✅ Introduction
@@ -61,8 +59,13 @@ Git Bash is a Git command-line interface for Windows, providing a Unix-like shel
    2. Run the installer and follow the prompts to complete the installation.
    3. Verify the installation by launching VSCode from the Applications folder.
 
+
 **Installing Code CLI tool**:
   1. Launch Visual Studio Code.
   2. Press Ctrl+Shift+P (Windows) or Cmd+Shift+P (macOS) to open the command palette.
   3. Type "Shell Command" in the search bar and select "Install 'code' command in PATH."
   4. Once the installation is complete, you can now use the `code` command in your terminal or command prompt to open files and folders in Visual Studio Code.
+
+🍎 MacOS
+🪟 Windows
+🐧 Linux
