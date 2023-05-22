@@ -33,7 +33,6 @@ Lesson: Variables, Types and Operators
   - Learn different arithmetic operators.
   - Grasp the concept of a boolean and its usage.
   - Learn about comparison operators and their usage in constructing boolean expressions and conditional statements.
-  - Explore Logical Operators to create complex logic using conditional statements and boolean expressions.
 
 Lesson: Strings and Numbers 
   - Strings
