@@ -134,7 +134,7 @@ Lesson: Error Management and Debugging
 - Learn how to use the `traceback` module to print an error's stack trace.
 
 
-##### Module 2 - Data Structures and Regex 
+##### Module 2 - Structured Data and Regex 
 
 Lesson: Introduction to Structured Data (JSON and CSV)
   - Familiarize with the concept of JSON and its interaction mechanisms.
