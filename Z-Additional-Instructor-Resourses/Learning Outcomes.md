@@ -62,7 +62,7 @@ Lesson: Strings and Numbers
     - Create and manipulate infinite numbers.
 
 
-  Lesson: Exploring Lists and Dictionaries 
+  Lesson: Exploring Lists, Tuples, and Dictionaries 
 - Lists
   - Create a list and understand its utility.
   - Use built-in list methods to manage list elements.
