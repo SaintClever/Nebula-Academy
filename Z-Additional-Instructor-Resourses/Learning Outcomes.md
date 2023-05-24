@@ -76,7 +76,6 @@ Lesson: Strings and Numbers
   - Understand what a tuple is, how to create one, and how it differs from a list.
   - Understand the concept of a tuple, its creation, and how it differs from a list.
   - Know the use cases for tuples and how they compare to lists in terms of mutability.
-  - Learn to create, access, and manipulate elements in a tuple.
   - Understand tuple methods and when to use them.
 - Dictionaries
   - Create a dictionary and understand its utility.
@@ -92,6 +91,7 @@ Lesson: Mastering Conditional Statements and Loops
   - Grasp the technique of using the `if` statement to create nested conditional statements.
   - Learn to construct loops using `while` and `for` keywords.
   - Understand the application of `break` and `continue` keywords to control loop flow.
+  - Use `enumerate()` to iterate over a sequence and access each element's index.
   - Discover the `range()` function to create a sequence of numbers.
   - Use `enumerate()` to iterate over a sequence and access each element's index.
 
