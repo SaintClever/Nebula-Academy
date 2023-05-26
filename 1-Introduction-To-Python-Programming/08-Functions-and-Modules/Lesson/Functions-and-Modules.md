@@ -1,3 +1,7 @@
+ Additional things to add
+    - Scope
+
+
 # Learning Outcomes
 - Discern what a function is and the process of creating one.
 - Grasp the distinction between a function definition and a function call.
@@ -5,8 +9,8 @@
 - Understand the concept of a module and the process to import one.
 - Learn to employ the `from` keyword to import specific functions from a module.
 - Learn to use the `as` keyword to alias a module or function.
-- Understand the `if __name__ == "__main__"` conditional statement to manage a program's execution.
-- Discover how to use the `sys` module to access command line arguments.
+~~- Understand the `if __name__ == "__main__"` conditional statement to manage a program's execution.~~
+~~- Discover how to use the `sys` module to access command line arguments.~~
 
 ---
 
@@ -17,9 +21,7 @@
   - [1.1 What is a Function?](#11-what-is-a-function)
 - [Section 2: Modules and Importing](#section-2-modules-and-importing)
   - [2.1 Understanding Modules](#21-understanding-modules)
-- [Section 3: Conditional Statements and `sys` Module](#section-3-conditional-statements-and-sys-module)
-  - [3.1 Conditional Execution](#31-conditional-execution)
-  - [3.2 Accessing Command Line Arguments](#32-accessing-command-line-arguments)
+  - [2.2 Creating Your Own Modules](#22-creating-your-own-modules)
 
 ---
 
@@ -27,9 +29,9 @@
 
 ## 1.1 What is a Function?
 
-*Functions in Python*
+**Functions in Python**
 
-A function is a block of reusable code that performs a specific task. It allows you to organize your code into logical and modular units, making it easier to read, understand, and maintain. Functions in Python are defined using the `def` keyword followed by the function name, parentheses, and a colon. They can have parameters and may return a value using the `return` keyword.
+A function is a block of reusable acode that performs a specific task. It allows you to organize your code into logical and modular units, making it easier to read, understand, and maintain. Functions in Python are defined using the `def` keyword followed by the function name, parentheses, and a colon. They can have parameters and may return a value using the `return` keyword.
 
 I've got an idea. Let's have a picnic! Let's start by buying some ingredients at the store.
 
@@ -96,7 +98,7 @@ def string_returning_function():
 Let's continue putting together our picnic. 
 
 1. Go to the store and buy the ingredients. (Call the `buy_ingredients()` function and assign it to a variable called `ingredients`.)
-2. Write a function to assemble sandwiches with the ingredients you bought.
+2. Write a function `assemble_sandwiches()` that assembles your ingredients into a list and returns it from the function.
 
 ```python
 ```
@@ -107,46 +109,180 @@ Let's continue putting together our picnic.
 
 *Modules in Python*
 
+As a Python developer you will likely use modules on a daily basis. Modules are a great way to organize your own code and make it more reusable, as well as gain access to tools and functionality that other developers in the community have created.
+
 A module in Python is a file containing Python definitions, statements, and functions. It provides a way to organize related code into separate files and promotes code reusability. To use the code defined in a module, you need to import it into your program using the `import` keyword, followed by the module name.
+
+Some built-in python modules include `math`, `random`, and `sys`. You can find a list of all the built-in modules in the [Python Standard Library](https://docs.python.org/3/library/index.html). There modules are available to you without having to install any additional packages.
+
+Here is an example of using one of these modules.
+
+```python
+import math
+print(math.pi)
+```
+
+Other packages are available to you through the [Python Package Index](https://pypi.org/). These packages can be installed using the `pip` command. We will cover this in more detail in the next section. Some commonly used packages include `jupyter`, which we are using to run this notebook, `numpy`, `pandas`, and `matplotlib`.
+
+Here is an example of using Matplotlib to plot a graph.
+
+> Note: You need to install Matplotlib using `pip install matplotlib` before running this code. We will cover this in more detail in the next section.
+
+```python
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4, 5]
+y = [10, 20, 15, 25, 30]
+
+plt.plot(x, y)
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('My Cool Graph')
+plt.show()
+```
+
+**Managing packages/modules with `pip`**
+
+The `pip` command is used to install and manage Python packages. It is a package manager that allows you to install, remove, and update packages from the [Python Package Index](https://pypi.org/). It is included by default with Python 3.4 and above. Throughout this course, we will be using `pip` to install and manage packages.
+
+Here are some common `pip` commands:
+
+| Command | Description |
+| --- | --- |
+| `pip install package_name` | Installs a package |
+| `pip uninstall package_name` | Uninstalls a package |
+| `pip freeze` | Outputs installed packages in requirements format |
+| `pip list` | Lists installed Python packages |
+| `pip show package_name` | Shows information about a specific package |
+| `pip install -r requirements.txt` | Installs multiple packages from a requirements file |
+| `pip upgrade package_name` | Upgrades a specific package |
+| `pip install --upgrade pip` | Upgrades pip itself |
+| `pip check` | Checks for broken dependencies |
+
+Additional packages can be found on the [Python Package Index](https://pypi.org/) and managed using the commands above.
+
+**👩🏿‍💻 You Do**
+
+*Using `pip` to install packages*
+
+
+
+
+
+**`pip` - requirements.txt**
+
+`pip` includes the ability to utilize a file, `requirements.txt`, to manage package dependencies.
+
+We can use the `pip freeze` command to output a list of installed packages in requirements format. This is useful when you want to share your code with others and want to make sure they have all the required packages installed. 
+
+Later a developer who downloads your code can use the `pip install -r requirements.txt` command to install all the packages listed in the requirements file.
+
+"You Do" Section
+
+**Importing Modules**
+We import modules using the `import` keyword, followed by the module name. This allows us to access the code defined in the module. We ca
+
+```python
+import math
+print(math.pi)
+```
 
 **Importing Specific Modules**
 
 In addition to importing an entire module, you can import specific functions or objects from a module using the `from` keyword. This allows you to access and use only the required functions or objects without importing the entire module. You can specify the specific names after the `from` keyword, separated by commas.
 
+```python
+from math import pi
+
+print(pi)
+```
+**👩🏿‍💻 You Do**
+
+*Importing Modules*
+
+1. Import the `math` module and print the value of pi.
+2. Using pip install the 
+
+```python
+```
+
+**Importing Multiple Modules**
+
+You can import multiple modules in a single line by separating the module names with commas.
+
+```python
+import math, random
+```
+
+As well you can import multiple specific functions or objects from a module in a single line by separating the module names with commas.
+
+```python
+from math import pi, sqrt
+```
+
 **Aliasing Modules and Functions**
 
 Sometimes, when importing modules or functions with long names, it can be tedious to repeatedly type the full name. In such cases, you can use the `as` keyword to provide an alias or shorter name for the module or function. This alias can be used to refer to the module or function throughout your code.
 
-Example with Python Code Block
+With Aliasing:
+```python
+import matplotlib.pyplot as plt
 
-"You Do" Section
+plt.plot([1, 2, 3, 4, 5], [10, 20, 15, 25, 30])
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('My Cool Graph')
+plt.show()
+```
+Without Aliasing:
+```python
+import matplotlib.pyplot
 
----
+matplotlib.pyplot.plot([1, 2, 3, 4, 5], [10, 20, 15, 25, 30])
+matplotlib.pyplot.xlabel('X-axis')
+matplotlib.pyplot.ylabel('Y-axis')
+matplotlib.pyplot.title('My Cool Graph')
+matplotlib.pyplot.show()
+```
 
-# Section 3: Conditional Statements and `sys` Module
+**👩🏿‍💻 You Do**
 
-## 3.1 Conditional Execution
+*Aliasing Modules*
 
-*Conditional Execution in Python*
+1. Import the `math` module and alias it as `m`.
+2. Print the value of pi using the alias.
 
-Conditional execution allows your program to make decisions and perform different actions based on certain conditions. In Python, the `if` statement is used for conditional execution. You can use comparison operators like `==`, `!=`, `<`, `>`, `<=`, `>=`, and logical operators like `and`, `or`, and `not` to create conditional expressions.
 
-**Managing Program Execution with `if __name__ == "__main__"`**
 
-In Python, the `if __name__ == "__main__"` conditional statement is often used to manage the execution of a program. It allows certain code blocks to be executed only when the script is run directly, but not when it is imported as a module. This can be useful for writing executable scripts and reusable modules.
+## 2.2 Creating Your Own Modules
 
-Example with Python Code Block
+**Creating Modules**
 
-"You Do" Section
+Creating our own modules is straightforward. We can create a module by first creating a new Python file and saving it with a `.py` extension. This file will contain the code for our module. We can then import this module into our program using the `import` keyword. We can pick where we want to place the module file, but it is recommended to place it in the same directory as the program that will be using it. Once we have created that file, we use the path to the file to import it into our program.
 
----
+Here is an example of creating a module and importing it into our program.
 
-## 3.2 Accessing Command Line Arguments
+```python
+# my_module.py
+def say_hello():
+    print("Hello World!")
+```
 
-*Working with Command Line Arguments*
+```python
+# main.py
+import my_module
 
-The `sys` module in Python provides access to various system-specific parameters and functions. One useful feature is accessing command line arguments passed to a script. By importing the `sys` module and using the `sys.argv` list, you can access the command line arguments provided when running the script.
+my_module.say_hello()
+```
 
-Example with Python Code Block
+**👩🏿‍💻 You Do**
 
-"You Do" Section
+*Create a Module*
+
+Let's create a picnic module so we have picnics in other programs.
+1. Create a new file called `picnic.py`.
+2. Add our `buy_ingredients()` function to the file.
+3. Add our `assemble_sandwiches()` function to the file.
+4. Add a `main()` function to the file. This function should `buy_ingredients()` and `assemble_sandwiches()`. We should return a picnic basket list with the sandwiches.
+5. Import the `picnic` module into our notebook.
+6. Have a picnic!
