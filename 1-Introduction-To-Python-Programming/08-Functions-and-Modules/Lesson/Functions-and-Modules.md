@@ -9,8 +9,11 @@
 - Understand the concept of a module and the process to import one.
 - Learn to employ the `from` keyword to import specific functions from a module.
 - Learn to use the `as` keyword to alias a module or function.
+<<<<<<< Updated upstream
 ~~- Understand the `if __name__ == "__main__"` conditional statement to manage a program's execution.~~
 ~~- Discover how to use the `sys` module to access command line arguments.~~
+=======
+>>>>>>> Stashed changes
 
 ---
 
