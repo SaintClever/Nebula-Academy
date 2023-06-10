@@ -127,6 +127,9 @@ Lesson: Error Management and Debugging
 - Understand the nature of an error and techniques to manage it.
 - Learn about different types of errors, how to interpret them, and importantly, how to find resources to rectify them.
 - Discover how to use `try`, `except`, `else`, and `finally` keywords to manage errors.
+
+
+Stretch
 - Learn to use the `raise` keyword to induce an error.
 - Understand how to use the `assert` keyword to test for errors.
 - Discover the `logging` module to log errors, and justifications for its preference over print statements.
@@ -146,7 +149,7 @@ Lesson: Introduction to Structured Data (JSON and CSV)
 
 Lesson: Mastering Regular Expressions
   - Get acquainted with the nature of a regular expression and its application.
-  - Gain knowledge about the array of metacharacters and their utilization in constructing regular expressions.
+  - Gain knowledge about the array of meta characters and their utilization in constructing regular expressions.
   - Utilize web utilities to construct and validate regular expressions.
   - Master the usage of the `re` module to: 
     - Search for and extract data.
