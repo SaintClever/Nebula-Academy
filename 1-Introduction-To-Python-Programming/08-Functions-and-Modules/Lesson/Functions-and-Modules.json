@@ -231,14 +231,27 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 15,
       "metadata": {},
-      "outputs": [],
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "9\n",
+            "2023-06-01 15:32:19.249208\n",
+            "/Users/brandongottshall/Repos/Work/Nebula/curriculumDevelopment/python-curriculum/1-Introduction-To-Python-Programming/08-Functions-and-Modules/Lesson\n"
+          ]
+        }
+      ],
       "source": [
         "import random\n",
-        "import datetime\n",
+        "from datetime import datetime\n",
         "import os\n",
         "\n",
+        "print(random.randint(1, 10))\n",
+        "print(datetime.now())\n",
+        "print(os.getcwd())\n",
         "\n",
         "\n"
       ]
@@ -274,7 +287,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 27,
+      "execution_count": 17,
       "metadata": {},
       "outputs": [
         {
@@ -312,10 +325,42 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 75,
       "metadata": {},
-      "outputs": [],
-      "source": []
+      "outputs": [
+        {
+          "data": {
+            "text/markdown": [
+              "## Free Kittens!"
+            ],
+            "text/plain": [
+              "<IPython.core.display.Markdown object>"
+            ]
+          },
+          "metadata": {},
+          "output_type": "display_data"
+        },
+        {
+          "data": {
+            "image/jpeg": "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",
+            "text/plain": [
+              "<IPython.core.display.Image object>"
+            ]
+          },
+          "metadata": {},
+          "output_type": "display_data"
+        }
+      ],
+      "source": [
+        "import requests\n",
+        "from IPython.display import Image, display, Markdown\n",
+        "import random\n",
+        "\n",
+        "response = requests.get(f'http://placekitten.com/{random.randint(1, 5)}00/{random.randint(1, 5)}00')\n",
+        "\n",
+        "display(Markdown('## Free Kittens!'))\n",
+        "display(Image(response.content))"
+      ]
     },
     {
       "attachments": {},
@@ -331,16 +376,9 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 15,
+      "execution_count": 1,
       "metadata": {},
       "outputs": [
-        {
-          "name": "stderr",
-          "output_type": "stream",
-          "text": [
-            "A subdirectory or file modules already exists.\n"
-          ]
-        },
         {
           "name": "stdout",
           "output_type": "stream",
@@ -368,7 +406,7 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 33,
+      "execution_count": 2,
       "metadata": {},
       "outputs": [
         {
@@ -380,7 +418,7 @@
         }
       ],
       "source": [
-        "from modules.hello import say_hello as hello\n",
+        "from example.modules.hello import say_hello as hello\n",
         "\n",
         "hello()\n"
       ]
@@ -398,10 +436,28 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 4,
       "metadata": {},
-      "outputs": [],
-      "source": []
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "3\n",
+            "-1\n",
+            "18\n",
+            "0.3\n"
+          ]
+        }
+      ],
+      "source": [
+        "from modules.calculator import add, subtract, multiply, divide\n",
+        "\n",
+        "print(add(1, 2))\n",
+        "print(subtract(3, 4))\n",
+        "print(multiply(3, 6))\n",
+        "print(divide(3, 10))"
+      ]
     },
     {
       "attachments": {},
@@ -473,7 +529,7 @@
       "name": "python",
       "nbconvert_exporter": "python",
       "pygments_lexer": "ipython3",
-      "version": "3.11.0"
+      "version": "3.11.3"
     },
     "orig_nbformat": 4
   },
