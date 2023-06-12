@@ -7,6 +7,7 @@
 5.  **[Git: Basics and Key Concepts](#5-git-basics-and-key-concepts)**
 6.  **[Exploring .gitignore](#6-exploring-gitignore)**
 
+
 ### 1. Introduction
 
 In this lesson, we'll explore two indispensable tools in programming and software development: GitHub and the Terminal. GitHub is a web-based hosting service for version control — essential for collaboration on team projects — while the Terminal is a powerful interface for navigating your computer and executing commands.
@@ -23,7 +24,7 @@ To start using GitHub, you first need to sign up for an account. Follow these st
 4.  Verify your email address by clicking on the link sent to your email.
 5.  Once your account is set up, log in to access the GitHub dashboard.
 
-#### 2.2 Creating a Repository -- (we will do this later)
+#### 2.2 Creating a Repository
 
 After setting up your account, let's create your first repository:
 
@@ -37,11 +38,13 @@ After setting up your account, let's create your first repository:
 
 #### 3.1 Accessing the Terminal
 
-The process to access the Terminal depends on your operating system. For Windows, you can use PowerShell or Command Prompt; for macOS and Linux, you can use Terminal. We will be using git bash, which is universally available.
+The process to access the Terminal depends on your operating system. For Windows, you can use PowerShell or Command Prompt; for macOS and Linux, you can use Terminal.
 
 #### 3.2 Basic Commands
 
 Here are some basic commands you can try in your terminal:
+
+ This command creates a new file. To use it, type `touch [file name]`.
 
 | Command | Description                                               | Example                                                                                   |
 | ------- | --------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
@@ -50,6 +53,7 @@ Here are some basic commands you can try in your terminal:
 | `cd`    | Changes the current directory.                            | `cd ..` (to go up one level) <br> `cd [directory name]` (to go into a specific directory) |
 | `mkdir` | Creates a new directory.                                  | `mkdir [directory name]`                                                                  |
 | `touch` | Creates a new file.                                       | `touch [file name]`                                                                       |
+
 
 ### 4. Practical Applications and Key Concepts
 
@@ -60,6 +64,9 @@ Understanding file paths is crucial to navigate directories effectively. There a
 #### 4.2 Identifying and Viewing Hidden Files
 
 By default, the Terminal doesn't show hidden files. These files usually start with a dot (`.`), for example, `.gitignore`. To view hidden files, use `ls -a`.
+
+By the end of this lesson, you should feel comfortable navigating GitHub and the Terminal, and understand their crucial role in programming and software development.
+
 
 ### 5. Git: Basics and Key Concepts
 
