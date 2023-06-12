@@ -1,24 +1,28 @@
 ## Table of Contents
 
-**Lesson: Working with Strings and Numbers**
+1. [Strings](#1-strings)
+   - [1.1 Recognizing and Crafting Strings](#11-recognizing-and-crafting-strings)
+   - [1.2 String Formatting with the Format and F-String Methods](#12-string-formatting-with-the-format-and-f-string-methods)
+   - [1.3 Utilizing Escape Characters and Raw Strings for Special Characters](#13-utilizing-escape-characters-and-raw-strings-for-special-characters)
+   - [1.4 Accessing String Characters via Indexing](#14-accessing-string-characters-via-indexing)
+   - [1.5 Utilizing Basic String Methods](#15-utilizing-basic-string-methods)
+   - [1.6 Manipulating Strings with Arithmetic Operators](#16-manipulating-strings-with-arithmetic-operators)
+2. [Delving into Numbers](#2-delving-into-numbers)
+   - [2.1 Distinguishing Between Integers and Floats](#21-distinguishing-between-integers-and-floats)
+   - [2.2 Executing Mathematical Operations with Arithmetic Operators](#22-executing-mathematical-operations-with-arithmetic-operators)
+   - [2.3 Harnessing Built-In Functions for Mathematical Operations](#23-harnessing-built-in-functions-for-mathematical-operations)
+   - [2.4 Comprehending and Manipulating the Order of Operations](#24-comprehending-and-manipulating-the-order-of-operations)
+   - [2.5 Utilizing the Math Module for Advanced Mathematical Operations](#25-utilizing-the-math-module-for-advanced-mathematical-operations)
+   - [2.6 Generating Random Numbers Using the Random Module](#26-generating-random-numbers-using-the-random-module)
+   - [2.7 Handling Infinite Numbers with Float, Decimal Modules and Math Module](#27-handling-infinite-numbers-with-float-decimal-modules-and-math-module)
 
-1. **Strings**
-   - 1.1 Recognizing and Crafting Strings
-   - 1.2 String Formatting with the Format and F-String Methods
-   - 1.3 Utilizing Escape Characters and Raw Strings for Special Characters
-   - 1.4 Accessing String Characters via Indexing
-   - 1.5 Utilizing Basic String Methods
-   - 1.6 Manipulating Strings with Arithmetic Operators
+## 1. Strings
+### 1.1 Recognizing and Crafting Strings
+In Python, strings are sequences of characters enclosed within quotes. For instance, the following code creates a variable named name that contains the string "Alice".
 
-- [**2. Delving into Numbers**](#2-delving-into-numbers)
-  - [2.1 Distinguishing Between Integers and Floats](#21-distinguishing-between-integers-and-floats)
-  - [2.2 Executing Mathematical Operations with Arithmetic Operators](#22-executing-mathematical-operations-with-arithmetic-operators)
-  - [2.3 Harnessing Built-In Functions for Mathematical Operations](#23-harnessing-built-in-functions-for-mathematical-operations)
-  - [2.4 Comprehending and Manipulating the Order of Operations](#24-comprehending-and-manipulating-the-order-of-operations)
-  - [2.5 Utilizing the Math Module for Advanced Mathematical Operations](#25-utilizing-the-math-module-for-advanced-mathematical-operations)
-  - [2.6 Generating Random Numbers Using the Random Module](#26-generating-random-numbers-using-the-random-module)
-  - [2.7 Handling Infinite Numbers with Float, Decimal Modules and Math Module](#27-handling-infinite-numbers-with-float-decimal-modules-and-math-module)
-
+```python
+name = "Alice"
+```
 
 
 ### 1. Strings
