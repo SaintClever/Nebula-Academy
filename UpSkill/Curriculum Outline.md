@@ -1,24 +1,24 @@
-Module 1 - Python Programming: An Introduction
+## Module 1 - Python Programming: An Introduction
 
-Introduction to Python
-Setting up the Environment
-Navigating GitHub And Terminal
-Variables, Types and Operators
-Strings and Numbers
-Exploring Lists and Dictionaries
-Mastering Conditional Statements and Loops
-Exploring Functions and Modules
-File Operations and Dependency Management
+- **Section 0** Setting up the Environment
+- **Section 1** Introduction to Python
+- **Section 2** Navigating GitHub And Terminal
+- **Section 3** Variables, Types and Operators
+- **Section 4** Strings and Numbers
+- **Section 5** Exploring Lists and Dictionaries
+- **Section 6** Mastering Conditional Statements and Loops
+- **Section 7** Exploring Functions and Modules
+**Section 8** File Operations and Dependency Management
 
 
-Module 2 - Regex, Functional Programming, and OOP
+## Module 2 - Regex, Functional Programming, and OOP
 
-Mastering Regular Expressions
-Lambda Functions and Functional Programming Techniques
-Map, Filter, and Reduce
-OOP - Overview of Classes
+- **Section 1** Mastering Regular Expressions
+- **Section 2** Lambda Functions and Functional Programming Techniques
+- **Section 3** Map, Filter, and Reduce
+- **Section 4** OOP - Overview of Classes
 
 
 Module 3 - Building an API
 
-Backend (FastAPI and Working with Data)
+- **Section 1** Backend (FastAPI and Working with Data)
