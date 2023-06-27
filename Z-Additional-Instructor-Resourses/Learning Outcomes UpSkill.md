@@ -162,18 +162,22 @@ Lesson: OOP - Overview of Classes
   - Learn how to utilize the `super()` function to invoke methods from a parent class.
 
 
-##### Module 3 - Building an API
+##### Module 3 - Visualizing Data From SQL Databases
 
-Lesson: Backend (FastAPI and Working with Data)
-  - Get to know what an API is and its role in programming.
-  - Discover the difference between frontend and backend in web development.
-  - See where FastAPI fits in the world of web development.
-  - Grasp the structure of a backend API.
-  - Walkthrough the installation of FastAPI and its necessary dependencies.
-  - Learn to use FastAPI to craft a backend API, create endpoints, and manage CRUD operations using JSON.
-  - Understand the role of a database in web development and the usage of JSON for replicating database functionalities at a smaller scale.
-  - Get familiar with basic HTTP methods and their use in CRUD operations.
-  - Handle route and query parameters effectively.
-  - Master parsing JSON data from a request body.
-  - Understand the importance and usage of HTTP status codes.
-  - Get hands-on experience in deploying a FastAPI application to the web.
+Lesson: Introduction to SQL in Python with PostgreSQL and psycopg2
+- Understand the role and importance of SQL in handling and analyzing data.
+- Become familiar with basic SQL concepts such as tables, schemas, keys (primary and foreign), and SQL data types.
+- Introduction to Python's libraries for interacting with SQL databases, focusing solely on psycopg2 for PostgreSQL.
+- Learn to set up and connect to a PostgreSQL database in Python using psycopg2.
+- Understand the SQL syntax and get a brief overview of basic operations such as CREATE, SELECT, INSERT, UPDATE, and DELETE.
+- Get introduced to the concept of Joins and the principle of grouping data.
+
+Lesson: Visualizing SQL Data with psycopg2 and MatPlotLib
+  - Review connecting to a PostgreSQL database in Python using psycopg2 and executing basic SQL queries.
+  - Introduction to MatPlotLib, a popular Python library for data visualization.
+  - Understand how to pull data from a SQL database using psycopg2 and prepare it for visualization.
+  - Learn the basics of creating charts in MatPlotLib, such as line plots, scatter plots, and bar charts.
+  - Understand how to customize the appearance of charts, including titles, axes labels, and colors.
+  - Learn to interpret visualizations and derive insights from them.
+  - Get introduced to the concept of saving plots for later use or distribution.
+
