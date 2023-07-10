@@ -34,7 +34,7 @@
 
 **Functions in Python**
 
-A function is a block of reusable acode that performs a specific task. It allows you to organize your code into logical and modular units, making it easier to read, understand, and maintain. Functions in Python are defined using the `def` keyword followed by the function name, parentheses, and a colon. They can have parameters and may return a value using the `return` keyword.
+In programming, a function is a set of instructions that can be used repeatedly to perform a particular task. It helps to organize code into manageable and understandable units. In Python, you define a function using the `def` keyword, followed by the function name, parentheses, and a colon. Functions can also have parameters and may return values using the `return` keyword.
 
 I've got an idea. Let's have a picnic! Let's start by buying some ingredients at the store.
 
@@ -51,7 +51,7 @@ buy_ingredients()
 
 **Function Definition and Function Call**
 
-In Python, a function is defined using the `def` keyword, followed by the function name and parentheses. Parameters can be specified inside the parentheses, and the function body is indented below. 
+To define a function in Python, use the `def` keyword followed by the function name and parentheses. You can specify parameters inside the parentheses and indent the function body below.
 
 ```python
 def function_name(parameters):
@@ -65,17 +65,13 @@ To execute or "call" a function, you simply use its name followed by parentheses
 function_name(arguments)
 ```
 
-Pay attention to the difference here between parameters and arguments. Notice we specify or define the name of the parameters in the function definition. We refer to these names as parameters.
-
-However, when we call the function, we pass in arguments. Arguments are the actual values that we pass into the function.
-
-If you noticed in our previous example we had both of these parts. The first code cell contains the function definition, and the second code cell contains the function call.
+It's important to distinguish between parameters and arguments. Parameters are defined in the function and are like placeholders for data that will be passed in. Arguments are the values passed in when the function is called. In our previous example, the function definition in the first code cell included the parameter names. The function call in the second code cell provided the actual argument values.
 
 > ***Note:*** I've seen a lot of students get tripped up by the difference between function reference vs function call. 
 >
-> A function reference, `function` (Not `function()`) references the contents of the function, but does not execute it. Imagine if I asked you to repeat to what you are going to do at the store. You would say, "I'm going to buy ingredients." You wouldn't actually go to the store and buy the ingredients. You would just reference the action you are going to take.
+> A function reference, written as `function` (without parentheses), refers to the contents of the function but does not execute it. It's like when someone asks you what you would do at the store, and you reply, "I'm going to buy ingredients." You are referencing the action you plan to take but aren't buying the ingredients at that moment.
 >
-> A function call on the other hand, `function()` actually executes the task. ie. You actually go to the store and buy the ingredients.
+> When you use the function call `function()`, it actually performs the task. It's like going to the store and buying the necessary ingredients.
 
 **Returning Values From Our Functions**
 
@@ -112,9 +108,9 @@ Let's continue putting together our picnic.
 
 *Modules in Python*
 
-As a Python developer you will likely use modules on a daily basis. Modules are a great way to organize your own code and make it more reusable, as well as gain access to tools and functionality that other developers in the community have created.
+As a Python developer, you'll use modules a lot. They can help you keep your code organized, make it easier to reuse, and give you access to tools and functions that other developers have created.
 
-A module in Python is a file containing Python definitions, statements, and functions. It provides a way to organize related code into separate files and promotes code reusability. To use the code defined in a module, you need to import it into your program using the `import` keyword, followed by the module name.
+A module is just a file that contains Python code. It lets you group related code together and reuse it in different programs. To use a module in your program, you need to import it using the `import` keyword and the module's name.
 
 Some built-in python modules include `math`, `random`, and `sys`. You can find a list of all the built-in modules in the [Python Standard Library](https://docs.python.org/3/library/index.html). There modules are available to you without having to install any additional packages.
 
@@ -261,7 +257,7 @@ matplotlib.pyplot.show()
 
 **Creating Modules**
 
-Creating our own modules is straightforward. We can create a module by first creating a new Python file and saving it with a `.py` extension. This file will contain the code for our module. We can then import this module into our program using the `import` keyword. We can pick where we want to place the module file, but it is recommended to place it in the same directory as the program that will be using it. Once we have created that file, we use the path to the file to import it into our program.
+Making our own modules is easy. We can create a module by making a new Python file and saving it with a `.py` extension. This file will contain the code for our module. We can import this module into our program using the `import` keyword. We can choose where to put the module file, but it's better to put it in the same directory as the program that will be using it. Once we have made the file, we use its path to import it into our program.git add 
 
 Here is an example of creating a module and importing it into our program.
 
