@@ -62,7 +62,7 @@ Lesson: Strings and Numbers
     - Create and manipulate infinite numbers.
 
 
-  Lesson: Exploring Lists, Tuples, and Dictionaries 
+  Lesson: Exploring Lists and Dictionaries 
 - Lists
   - Create a list and understand its utility.
   - Use built-in list methods to manage list elements.
@@ -76,6 +76,7 @@ Lesson: Strings and Numbers
   - Understand what a tuple is, how to create one, and how it differs from a list.
   - Understand the concept of a tuple, its creation, and how it differs from a list.
   - Know the use cases for tuples and how they compare to lists in terms of mutability.
+  - Learn to create, access, and manipulate elements in a tuple.
   - Understand tuple methods and when to use them.
 - Dictionaries
   - Create a dictionary and understand its utility.
@@ -91,7 +92,6 @@ Lesson: Mastering Conditional Statements and Loops
   - Grasp the technique of using the `if` statement to create nested conditional statements.
   - Learn to construct loops using `while` and `for` keywords.
   - Understand the application of `break` and `continue` keywords to control loop flow.
-  - Use `enumerate()` to iterate over a sequence and access each element's index.
   - Discover the `range()` function to create a sequence of numbers.
   - Use `enumerate()` to iterate over a sequence and access each element's index.
 
@@ -122,30 +122,8 @@ Lesson: File Operations and Dependency Management
     - Understand pip and its application to manage dependencies.
     - Learn to create and use a requirements.txt file to install dependencies both manually and using pip.
 
-Lesson: Error Management and Debugging
 
-- Understand the nature of an error and techniques to manage it.
-- Learn about different types of errors, how to interpret them, and importantly, how to find resources to rectify them.
-- Discover how to use `try`, `except`, `else`, and `finally` keywords to manage errors.
-
-
-Stretch
-- Learn to use the `raise` keyword to induce an error.
-- Understand how to use the `assert` keyword to test for errors.
-- Discover the `logging` module to log errors, and justifications for its preference over print statements.
-- Discover the `pdb` module, and its application to debug code.
-- Learn how to use the `traceback` module to print an error's stack trace.
-
-
-##### Module 2 - Structured Data and Regex 
-
-Lesson: Introduction to Structured Data (JSON and CSV)
-  - Familiarize with the concept of JSON and its interaction mechanisms.
-  - Master the technique of parsing nested JSON data.
-  - Discover the usage of the `json` module to effectively read and write JSON files.
-  - Understand the intricacies of CSV and its interaction mechanisms.
-  - Employ the `csv` module to effectively extract meaningful data from CSV files.
-  - Learn the application of the `csv` module to read and write CSV files.
+##### Module 2 - Regex, Functional Programming, and OOP
 
 Lesson: Mastering Regular Expressions
   - Get acquainted with the nature of a regular expression and its application.
@@ -158,15 +136,10 @@ Lesson: Mastering Regular Expressions
     - Clean data.
     - Validate data.
 
-
-##### Module 3 - Functional Programming 
-
-Lesson: Introduction to Functional Programming Techniques 
+Lesson: Lambda Functions and Functional Programming Techniques
   - Acquaint with the concept of functional programming and contrast it with imperative programming.
   - Understand the difference between pure and impure functions.
   - Grasp the concept of side effects and know when, how, and why to avoid them./
-
-Lesson: Lambda Functions 
   - Familiarize with lambda functions and master the process of creating one.
   - Discover how to use lambda functions to create anonymous functions.
   - Understand the principles of higher order functions and their usage.
@@ -177,12 +150,34 @@ Lesson: Map, Filter, and Reduce
   - Discover how to use map, filter, and reduce to transform, filter, and aggregate data.
   - Comprehend how to integrate the use of lambda functions with map, filter, and reduce.
 
-Lesson: Generator Comprehension
-  - Get to know the concept of a generator, the benefits it offers, and how to create one.
-  - Understand the difference between a generator and a list comprehension, and when to use each.
-  - Learn how to use generators to iterate over large data sets.
-  - Understand how the `yield` keyword works and how to use it to create generators.
-  - Grasp how to use loops in conjunction with generators and the `next()` function to iterate over a generator.
+Lesson: OOP - Overview of Classes
+  - Familiarize with Object Oriented Programming (OOP) and contrast it with Functional Programming.
+  - Understand essential concepts such as the distinction between classes and objects.
+  - Grasp the principles of encapsulation, inheritance, and polymorphism and their roles in creating classes.
+  - Gain an in-depth understanding of what a class is and master its definition and syntax.
+  - Examine the components of a class, such as attributes and methods, and learn their creation processes.
+  - Discover how to access and use class attributes and methods both inside and outside the class.
+  - Examine polymorphism and its critical role in class inheritance.
+  - Understand the varieties and uses of dunder methods in programming.
+  - Learn how to utilize the `super()` function to invoke methods from a parent class.
 
 
+##### Module 3 - Visualizing Data From SQL Databases
+
+Lesson: Introduction to SQL in Python with PostgreSQL and psycopg2
+- Understand the role and importance of SQL in handling and analyzing data.
+- Become familiar with basic SQL concepts such as tables, schemas, keys (primary and foreign), and SQL data types.
+- Introduction to Python's libraries for interacting with SQL databases, focusing solely on psycopg2 for PostgreSQL.
+- Learn to set up and connect to a PostgreSQL database in Python using psycopg2.
+- Understand the SQL syntax and get a brief overview of basic operations such as CREATE, SELECT, INSERT, UPDATE, and DELETE.
+- Get introduced to the concept of Joins and the principle of grouping data.
+
+Lesson: Visualizing SQL Data with psycopg2 and MatPlotLib
+  - Review connecting to a PostgreSQL database in Python using psycopg2 and executing basic SQL queries.
+  - Introduction to MatPlotLib, a popular Python library for data visualization.
+  - Understand how to pull data from a SQL database using psycopg2 and prepare it for visualization.
+  - Learn the basics of creating charts in MatPlotLib, such as line plots, scatter plots, and bar charts.
+  - Understand how to customize the appearance of charts, including titles, axes labels, and colors.
+  - Learn to interpret visualizations and derive insights from them.
+  - Get introduced to the concept of saving plots for later use or distribution.
 

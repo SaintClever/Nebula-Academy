@@ -88,10 +88,10 @@ These projects will help students to apply and solidify their understanding of f
 Here are some project ideas for Module 4:
 
 1.  **Library Management System**: ⭐️
-    
     -   Classes: Define entities like Book, Member, and Library.
     -   Objects: Create instances of these entities for operations.
-2.  **Bank Account Management System**:
+
+1.  **Bank Account Management System**:
     
     -   Classes: Define Bank, Account, and Customer classes.
     -   Objects: Manage customer accounts and transactions via object instances.
