@@ -134,4 +134,3 @@ def divide_numbers(num1, num2):
 ```
 
 To write more robust and reliable code, it's crucial to comprehend Python errors and know how to manage them. Remember that errors are not always negative, as they are crucial for the progress of the development process.
-
