@@ -15,9 +15,10 @@
         "  - [Boolean and Comparison Operators](#boolean-and-comparison-operators)\n",
         "  - [Logical Operators](#logical-operators)\n",
         "\n",
+        "\n",
         "## Decoding Variables\n",
         "\n",
-        "When programming in Python, variables act like containers that hold onto values. When we assign a value to a variable, it becomes active, and we no longer need to initialize it formally.\n"
+        "When programming in Python, variables act like containers that hold onto values. When we assign a value to a variable, it becomes active, and we no longer need to initialize it formally."
       ]
     },
     {
@@ -34,7 +35,7 @@
       "cell_type": "markdown",
       "metadata": {},
       "source": [
-        "By using the print() function, we can display the value of a variable.\n"
+        "By using the print() function, we can display the value of a variable. "
       ]
     },
     {
@@ -42,22 +43,18 @@
       "execution_count": null,
       "metadata": {},
       "outputs": [],
-      "source": [
-        "print(salutation)"
-      ]
+      "source": ["print(salutation)"]
     },
     {
       "cell_type": "markdown",
       "metadata": {},
       "source": [
-        "> **_Note:_**\n",
-        "> You will see '\\n' used in print statments throughout this lesson. Like this:\n",
-        ">\n",
+        "> ***Note:*** \n",
+        "You will see '\\n' used in print statments throughout this lesson. Like this:\n",
         "> ```python\n",
         "> print(\"Hello World!\\n\")\n",
         "> ```\n",
-        ">\n",
-        "> This is a special character that represents a new line. It is used to make the output more readable.\n"
+        "> This is a special character that represents a new line. It is used to make the output more readable."
       ]
     },
     {
@@ -66,11 +63,10 @@
       "metadata": {},
       "source": [
         "#### 🧑🏽‍💻 You do\n",
-        "\n",
         "**Create a Variable**\n",
         "\n",
         "1. Create A variable named \"my_name\" and assign it a string containing your name\n",
-        "2. Print the variable\n"
+        "2. Print the variable"
       ]
     },
     {
@@ -78,15 +74,13 @@
       "execution_count": null,
       "metadata": {},
       "outputs": [],
-      "source": [
-        "# Add your solution below:\n"
-      ]
+      "source": ["# Add your solution below:\n"]
     },
     {
       "cell_type": "markdown",
       "metadata": {},
       "source": [
-        "In Python, variables are dynamic, allowing them to be easily **reassigned** to any data type whenever needed.\n"
+        "In Python, variables are dynamic, allowing them to be easily **reassigned** to any data type whenever needed."
       ]
     },
     {
@@ -97,10 +91,7 @@
         {
           "name": "stdout",
           "output_type": "stream",
-          "text": [
-            "salutation: I'm Jane Doe\n",
-            "salutation: 33\n"
-          ]
+          "text": ["salutation: I'm Jane Doe\n", "salutation: 33\n"]
         }
       ],
       "source": [
@@ -117,15 +108,15 @@
       "source": [
         "## Basic Data Types\n",
         "\n",
-        "| Data Types | Description                                                              | Example                     |\n",
-        "| ---------- | ------------------------------------------------------------------------ | --------------------------- |\n",
-        "| **int**    | An integer is a whole number (positive, negative, or zero)               | `x = 1`                     |\n",
-        "| **float**  | A Float is a number with a decimal point or a number in exponential form | `x = 1.0`                   |\n",
-        "| **str**    | A string is a sequence of characters enclosed in single or double quotes | `x = 'Hello World'`         |\n",
-        "| **bool**   | A Boolean value is either `True` or `False`                              | `x = True`                  |\n",
-        "| **list**   | A list is a mutable ordered sequence of items                            | `x = [1, 2, 3]`             |\n",
-        "| **tuple**  | A tuple is an immutable ordered sequence of items                        | `x = (1, 2, 3)`             |\n",
-        "| **dict**   | A dictionary is a key-value pair data structure                          | `x = {'a':1, 'b':2, 'c':3}` |\n"
+        "| Data Types | Description | Example |\n",
+        "| --- | --- | --- |\n",
+        "| **int** | An integer is a whole number (positive, negative, or zero) | `x = 1` |\n",
+        "| **float** | A Float is a number with a decimal point or a number in exponential form | `x = 1.0` |\n",
+        "| **str** | A string is a sequence of characters enclosed in single or double quotes | `x = 'Hello World'` |\n",
+        "| **bool** | A Boolean value is either `True` or `False` | `x = True` |\n",
+        "| **list** | A list is a mutable ordered sequence of items | `x = [1, 2, 3]` |\n",
+        "| **tuple** | A tuple is an immutable ordered sequence of items | `x = (1, 2, 3)` |\n",
+        "| **dict** | A dictionary is a key-value pair data structure | `x = {'a':1, 'b':2, 'c':3}` |"
       ]
     },
     {
@@ -134,7 +125,7 @@
       "source": [
         "**`type()`** and **`__class__`**\n",
         "\n",
-        "In Python, there are built-in methods to determine the data type of a variable. The `type()` function is one way to do this. Another method is to use the **class** attribute, which is a property of the object and can be accessed using the dot operator.\n"
+        "In Python, there are built-in methods to determine the data type of a variable. The `type()` function is one way to do this. Another method is to use the __class__ attribute, which is a property of the object and can be accessed using the dot operator."
       ]
     },
     {
@@ -172,7 +163,7 @@
         "\n",
         "Integers and floats enable us to express various types of numerical values. Integers are whole numbers, while floats can be any number with a decimal point or expressed in exponential form. Both integers and floats can be either positive or negative.\n",
         "\n",
-        "Let's create some together:\n"
+        "Let's create some together:"
       ]
     },
     {
@@ -188,8 +179,7 @@
       "metadata": {},
       "source": [
         "#### 🧑🏽‍💻 You do\n",
-        "\n",
-        "**Create an Integer variable.** &nbsp; Log it as well as its type.\n"
+        "**Create an Integer variable.** &nbsp; Log it as well as its type."
       ]
     },
     {
@@ -197,17 +187,14 @@
       "execution_count": null,
       "metadata": {},
       "outputs": [],
-      "source": [
-        "# Your Code Here 🤖\n",
-        "\n"
-      ]
+      "source": ["# Your Code Here 🤖\n", "\n"]
     },
     {
       "attachments": {},
       "cell_type": "markdown",
       "metadata": {},
       "source": [
-        "**Create a Float variable.** &nbsp; Log it as well as its type.\n"
+        "**Create a Float variable.** &nbsp; Log it as well as its type."
       ]
     },
     {
@@ -215,10 +202,7 @@
       "execution_count": null,
       "metadata": {},
       "outputs": [],
-      "source": [
-        "# Your Code Here 🤖\n",
-        "\n"
-      ]
+      "source": ["# Your Code Here 🤖\n", "\n"]
     },
     {
       "attachments": {},
@@ -229,7 +213,7 @@
         "\n",
         "A list is a variable used to store multiple items. It is created by enclosing the items in square brackets. Lists are mutable, which means that they can be changed. Additionally, the items in a list can be of different types. Here are some examples of lists:\n",
         "\n",
-        "Let's create one together:\n"
+        "Let's create one together:"
       ]
     },
     {
@@ -245,8 +229,7 @@
       "metadata": {},
       "source": [
         "#### 🧑🏽‍💻 You do\n",
-        "\n",
-        "**Create a List variable.** &nbsp; Log it as well as its type.\n"
+        "**Create a List variable.** &nbsp; Log it as well as its type."
       ]
     },
     {
@@ -254,10 +237,7 @@
       "execution_count": null,
       "metadata": {},
       "outputs": [],
-      "source": [
-        "# Your Code Here 🤖\n",
-        "\n"
-      ]
+      "source": ["# Your Code Here 🤖\n", "\n"]
     },
     {
       "attachments": {},
@@ -268,7 +248,7 @@
         "\n",
         "Tuples are used to store multiple items in a single variable. Tuples are created using parentheses. Tuples are immutable, meaning they cannot be changed.\n",
         "\n",
-        "Let's create one together:\n"
+        "Let's create one together:"
       ]
     },
     {
@@ -277,8 +257,7 @@
       "metadata": {},
       "source": [
         "#### 🧑🏽‍💻 You do\n",
-        "\n",
-        "**Create a Tuple Variable** &nbsp; Log it as well as its type.\n"
+        "**Create a Tuple Variable** &nbsp; Log it as well as its type."
       ]
     },
     {
@@ -286,10 +265,7 @@
       "execution_count": null,
       "metadata": {},
       "outputs": [],
-      "source": [
-        "# Your Code Here 🤖\n",
-        "\n"
-      ]
+      "source": ["# Your Code Here 🤖\n", "\n"]
     },
     {
       "attachments": {},
@@ -310,7 +286,7 @@
         "is_logged_in = False\n",
         "```\n",
         "\n",
-        "Let's create one together:\n"
+        "Let's create one together:"
       ]
     },
     {
@@ -318,11 +294,7 @@
       "execution_count": null,
       "metadata": {},
       "outputs": [],
-      "source": [
-        "# Toggle\n",
-        "\n",
-        "# Comparisons\n"
-      ]
+      "source": ["# Toggle\n", "\n", "# Comparisons\n"]
     },
     {
       "attachments": {},
@@ -330,8 +302,7 @@
       "metadata": {},
       "source": [
         "#### 🧑🏽‍💻 You do\n",
-        "\n",
-        "**Create a Boolean Variable** &nbsp; _Log it as well as its type._\n"
+        "**Create a Boolean Variable** &nbsp; *Log it as well as its type.*"
       ]
     },
     {
@@ -339,10 +310,7 @@
       "execution_count": null,
       "metadata": {},
       "outputs": [],
-      "source": [
-        "# Your Code Here 🤖\n",
-        "\n"
-      ]
+      "source": ["# Your Code Here 🤖\n", "\n"]
     },
     {
       "attachments": {},
@@ -355,7 +323,7 @@
         "\n",
         "To understand better, think of a dictionary like words and definitions, where the key is the word, and the value is the definition. We create dictionaries using curly brackets. Additionally, dictionaries are mutable, which means that they can be changed.\n",
         "\n",
-        "Let's create one together:\n"
+        "Let's create one together:"
       ]
     },
     {
@@ -371,8 +339,7 @@
       "metadata": {},
       "source": [
         "#### 🧑🏽‍💻 You do\n",
-        "\n",
-        "**Create a Dictionary Variable** &nbsp; _Log it as well as its type._\n"
+        "**Create a Dictionary Variable** &nbsp; *Log it as well as its type.*"
       ]
     },
     {
@@ -380,10 +347,7 @@
       "execution_count": null,
       "metadata": {},
       "outputs": [],
-      "source": [
-        "# Your Code Here 🤖\n",
-        "\n"
-      ]
+      "source": ["# Your Code Here 🤖\n", "\n"]
     },
     {
       "attachments": {},
@@ -396,19 +360,19 @@
         "\n",
         "To understand better, think of a dictionary like words and definitions, where the key is the word, and the value is the definition. We create dictionaries using curly brackets. Additionally, dictionaries are mutable, which means that they can be changed. In Python, mutability describes whether or not we can change our data after it has been created.\n",
         "\n",
-        "This can be confusing to wrap your head around, but we have to consider the variable and the data as separate things. The variable is a container that holds the data. The data is the actual value that we are storing. When referring to mutability, we refer to the data, not the variable.\n",
+        "This can be confusing to wrap your head around, but we have to consider the variable and the data as separate things. The variable is a container that holds the data. The data is the actual value that we are storing. When referring to mutability, we refer to the data, not the variable. \n",
         "\n",
         "Why is that distinction important?\n",
         "\n",
         "While we can <u>always</u> reassign a variable to a new value, we cannot always change the data itself.\n",
         "\n",
-        "| Immutable Data Types | Mutable Data Types |\n",
-        "| -------------------- | ------------------ |\n",
-        "| Integer              | List               |\n",
-        "| Float                | Dictionary         |\n",
-        "| Tuple                | -                  |\n",
-        "| String               | -                  |\n",
-        "| Boolean              | -                  |\n",
+        " | Immutable Data Types | Mutable Data Types |\n",
+        "| ---|--- |\n",
+        " | Integer | List |\n",
+        "| Float | Dictionary |\n",
+        "| Tuple | - |\n",
+        "| String | - |\n",
+        "| Boolean | - |\n",
         "\n",
         "For our immutable data types, we cannot change the data itself. In the following example:\n",
         "\n",
@@ -437,7 +401,7 @@
       "source": [
         "**`id()`**\n",
         "\n",
-        "Take a look at the example below. It's important to note that even when you reassign a string to the exact same value, it is treated as a new variable. You can observe this using the `id()` function, which gives a unique identifier for an object based on its location in your computer's RAM.\n"
+        "Take a look at the example below. It's important to note that even when you reassign a string to the exact same value, it is treated as a new variable. You can observe this using the `id()` function, which gives a unique identifier for an object based on its location in your computer's RAM."
       ]
     },
     {
@@ -489,7 +453,7 @@
       "cell_type": "markdown",
       "metadata": {},
       "source": [
-        "Try using the `id()` function on the variables below to see how the id changes when the variable is reassigned.\n"
+        "Try using the `id()` function on the variables below to see how the id changes when the variable is reassigned."
       ]
     },
     {
@@ -506,11 +470,11 @@
       "source": [
         "## Data Type Conversion: Casting\n",
         "\n",
-        "In programming, data types have unique methods and properties that make data manipulation possible. Python has a casting feature that allows you to convert between data types. For instance, you can convert a string to an integer by using the `int()` function, while the `float()` or `int()` functions can be used to convert numbers, depending on the desired outcome.\n",
+        "In programming, data types have unique methods and properties that make data manipulation possible. Python has a casting feature that allows you to convert between data types. For instance, you can convert a string to an integer by using the `int()` function, while the `float()` or `int()` functions can be used to convert numbers, depending on the desired outcome. \n",
         "\n",
-        "Take a look at the example below.\n",
+        "Take a look at the example below. \n",
         "\n",
-        "You may notice that `int()` successfully converted a string with a decimal point without throwing an error. It merely truncated the decimal point and any digits after it. This indicates that you can convert a string with a decimal point to a whole number without encountering errors.\n"
+        "You may notice that `int()` successfully converted a string with a decimal point without throwing an error. It merely truncated the decimal point and any digits after it. This indicates that you can convert a string with a decimal point to a whole number without encountering errors."
       ]
     },
     {
@@ -569,27 +533,27 @@
         "\n",
         "**Basic Operators**\n",
         "\n",
-        "| Operator | Description                                     |\n",
-        "| -------- | ----------------------------------------------- |\n",
-        "| `+`      | This operator adds two values together.         |\n",
+        "| Operator | Description |\n",
+        "| -------- | ----------- |\n",
+        "| `+`      | This operator adds two values together. |\n",
         "| `-`      | This operator subtracts one value from another. |\n",
-        "| `*`      | This operator multiplies two values together.   |\n",
-        "| `/`      | This operator divides one value by another.     |\n",
+        "| `*`      | This operator multiplies two values together. |\n",
+        "| `/`      | This operator divides one value by another. |\n",
         "\n",
         "**Advanced Operators**\n",
         "\n",
-        "| Operator | Description                                                                                                |\n",
-        "| -------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |\n",
-        "| `**`     | This operator raises a number to the power of another number.                                              |\n",
-        "| `//`     | This operator divides one value by another and rounds down to the nearest integer (floor division).        |\n",
-        "| `%`      | This operator returns the remainder of a division operation (modulo operation).                            |\n",
+        "| Operator | Description |\n",
+        "| -------- | ----------- |\n",
+        "| `**`     | This operator raises a number to the power of another number. |\n",
+        "| `//`     | This operator divides one value by another and rounds down to the nearest integer (floor division). |\n",
+        "| `%`      | This operator returns the remainder of a division operation (modulo operation). |\n",
         "| `!`      | This isn't a valid operator in Python, but in many programming languages it denotes logical NOT operation. |\n",
-        "| `&`      | This operator performs a bitwise AND operation.                                                            |\n",
-        "| `        | `                                                                                                          | This operator performs a bitwise OR operation. |\n",
-        "| `^`      | This operator performs a bitwise XOR operation.                                                            |\n",
-        "| `~`      | This operator performs a bitwise NOT operation.                                                            |\n",
+        "| `&`      | This operator performs a bitwise AND operation. |\n",
+        "| `|`      | This operator performs a bitwise OR operation. |\n",
+        "| `^`      | This operator performs a bitwise XOR operation. |\n",
+        "| `~`      | This operator performs a bitwise NOT operation. |\n",
         "\n",
-        "Let's try some out together:\n"
+        "Let's try some out together:"
       ]
     },
     {
@@ -608,11 +572,12 @@
         "\n",
         "In addition to those symbols we just introduced you to, you can also use some plain english words to perform some logic reasoning. These are called logical operators.\n",
         "\n",
-        "| Operator | Description                                                               |\n",
-        "| -------- | ------------------------------------------------------------------------- |\n",
-        "| `and`    | This operator returns `True` if both statements are true.                 |\n",
-        "| `or`     | This operator returns `True` if one of the statements is true.            |\n",
+        "| Operator | Description |\n",
+        "| -------- | ----------- |\n",
+        "| `and`    | This operator returns `True` if both statements are true. |\n",
+        "| `or`     | This operator returns `True` if one of the statements is true. |\n",
         "| `not`    | This operator reverses the result, returns `False` if the result is true. |\n",
+        "\n",
         "\n",
         "**When using the `and` operator**, consider the scenario of skydiving for the first time. Your tandem instructor will check that you have both a parachute and a reserve parachute before you jump. It's essential to ensure both are in place before taking this leap of faith.\n",
         "\n",
@@ -620,7 +585,7 @@
         "\n",
         "**Lastly, let's talk about the `not` operator**. Imagine the instructor is selecting a landing spot, and their only condition is that it's not water. They'll choose any place other than water to land.\n",
         "\n",
-        "Let's code that together:\n"
+        "Let's code that together:"
       ]
     },
     {
@@ -639,14 +604,14 @@
         "\n",
         "When comparing two values, we use comparison operators. These operators return a boolean value, `True` or `False`. Although we'll soon learn how to use these operators to make decisions in our code, let's first understand what they are and how to use them.\n",
         "\n",
-        "| Operator | Description                                                                                               |\n",
-        "| -------- | --------------------------------------------------------------------------------------------------------- |\n",
-        "| `==`     | This operator returns `True` if both values are equal.                                                    |\n",
-        "| `!=`     | This operator returns `True` if both values are not equal.                                                |\n",
-        "| `>`      | This operator returns `True` if the value on the left is greater than the value on the right.             |\n",
-        "| `<`      | This operator returns `True` if the value on the left is less than the value on the right.                |\n",
+        "| Operator | Description |\n",
+        "| -------- | ----------- |\n",
+        "| `==`     | This operator returns `True` if both values are equal. |\n",
+        "| `!=`     | This operator returns `True` if both values are not equal. |\n",
+        "| `>`      | This operator returns `True` if the value on the left is greater than the value on the right. |\n",
+        "| `<`      | This operator returns `True` if the value on the left is less than the value on the right. |\n",
         "| `>=`     | This operator returns `True` if the value on the left is greater than or equal to the value on the right. |\n",
-        "| `<=`     | This operator returns `True` if the value on the left is less than or equal to the value on the right.    |\n",
+        "| `<=`     | This operator returns `True` if the value on the left is less than or equal to the value on the right. |\n",
         "\n",
         "Let's create some conditional's together:\n"
       ]
@@ -675,7 +640,7 @@
       "cell_type": "markdown",
       "metadata": {},
       "source": [
-        "This lesson serves as a stepping stone into the world of Python, revolving around variables, types, and operators. As you delve deeper into Python, you'll encounter these topics in further depth and complexity. Happy Pythoning!\n"
+        "This lesson serves as a stepping stone into the world of Python, revolving around variables, types, and operators. As you delve deeper into Python, you'll encounter these topics in further depth and complexity. Happy Pythoning!"
       ]
     }
   ],
