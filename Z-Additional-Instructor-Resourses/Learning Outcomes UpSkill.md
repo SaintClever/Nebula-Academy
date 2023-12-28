@@ -181,3 +181,36 @@ Lesson: Visualizing SQL Data with psycopg2 and MatPlotLib
   - Learn to interpret visualizations and derive insights from them.
   - Get introduced to the concept of saving plots for later use or distribution.
 
+
+Upskill: 130 hours
+164 hrs (Minus Soft Skills and Exams)
+
+34 hrs to Allocate (5.75 reclaimed from projects and 25.5 from Capstone)
+
+65.25 hrs to Allocate
+
+# Things to add
+- [ ] Flask - 
+- [ ] API - 
+  - [ ] OpenAI | API
+    - Create One API Account for Nebula. (Assign each Student API KEYs from this account.)
+- [ ] Data Visualization in PowerBI 
+- [ ] Capstone Project - 26 hrs (10 hours ouside of class - NOT ALLOCATED)
+
+
+
+# Capstone Ideas - Present on PowerPoint
+
+- [ ] **Climate Change Dashboard**: Visualize global temperatures, sea levels, and CO2 emissions trends.
+- [ ] **Food Production & Consumption Analytics**: Highlight regions of food deficiency and analyze causes.
+- [ ] **Spread of Diseases**: Track and visualize disease spread using interactive maps.
+- [ ] **Education Accessibility Map**: Identify areas with limited access to quality education.
+- [ ] **Wage Gap Analysis**: Visualize wage discrepancies across genders in different sectors.
+- [ ] **Water Quality Dashboard**: Monitor global water quality metrics.
+- [ ] **Renewable Energy Adoption Monitor**: Visualize renewable energy adoption rates across regions.
+- [ ] **Marine Life Tracker**: Track and visualize marine life populations.
+- [ ] **Deforestation Monitor**: Track deforestation rates using satellite images.
+- [ ] **Crime and Justice Dashboard**: Visualize data on crime rates and judicial outcomes.
+- [ ] **SDGs Progress Tracker**: Comprehensive dashboard monitoring progress on all SDGs.
+- [ ] **Housing Accessibility Dashboard**: Analyze and visualize data on affordable housing availability, urban infrastructure quality, and population density in urban regions.
+

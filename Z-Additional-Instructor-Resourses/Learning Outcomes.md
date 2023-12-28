@@ -1,142 +1,63 @@
 Learning Outcomes 
 
-##### Module 1 - Python Programming: An Introduction 
+### Module 1 - Python Programming: An Introduction
 
-Lesson: Introduction to Python 
-  - Recognize the versatility and applications of Python.
-  - Acquaint with Python's history, origin, and guiding principles.
-  - Familiarize with commonly used modules, packages, libraries, and frameworks in the Python ecosystem.
+#### Lesson: Introduction to Python
+- Understand Python's versatility, applications, history, and core principles.
+- Familiarize with key modules, packages, libraries, and frameworks.
+- Grasp Python's basic syntax and write basic programs.
+- Execute Python code in various environments, including IDEs.
+- Utilize Python's built-in functions and operators.
 
-Lesson: Setting up the Environment 
-  - Execute Python installation tailored to the specific operating system.
-  - Set up Microsoft's VS Code IDE (Integrated Development Environment).
-  - Install a terminal emulator, particularly Git Bash for Windows users.
-  - Set up Jupyter Notebook.
+#### Lesson: Setting up the Environment 
+- Install Python specific to the operating system.
+- Set up IDEs, especially VS Code.
+- Install terminal emulators, with a focus on Git Bash for Windows.
+- Configure Jupyter Notebook and manage Python packages and virtual environments.
 
-Lesson: Navigating GitHub And Terminal 
-  - Navigate GitHub's interface and create a GitHub account.
-  - Initiate and clone a repository.
-  - Differentiate between a local and remote repository.
-  - Execute basic terminal commands like pwd, ls, cd, mkdir, touch, rm and rm -rf, and relate these concepts to their GUI counterparts.
-  - Employ the Code CLI tool to launch VS Code from the terminal.
-  - Differentiate between relative and absolute paths, directories and files, file extensions and file names.
-  - Identify hidden files and how to view them both in the terminal and the GUI.
+#### Lesson: Navigating GitHub and Terminal
+- Navigate GitHub, create accounts, and manage repositories.
+- Execute essential terminal commands and understand their GUI equivalents.
+- Use the Code CLI tool and understand file system concepts.
+- Manage Git branches, understand version control, and use Git for collaboration.
+- Emphasize the value of articulate Git commit messages.
 
+#### Lesson: Variables, Types, and Operators
+- Understand variables, their roles, and assignment.
+- Dive into Python's data types and their mutability.
+- Use built-in functions like print() and type().
+- Grasp arithmetic and comparison operators, and boolean concepts.
+- Understand type casting, operator precedence, and Python's dynamic typing.
 
-Lesson: Variables, Types and Operators
-  - Grasp the role of variables and their assignment process.
-  - Explore Python's diverse data types.
-  - Utilize Python's built-in type() function to discern a variable's type.
-  - Distinguish between mutable and immutable data types.
-  - Utilize the print() function to display strings and numbers.
-  - Understand variable scope and its implications.
-  - Learn different arithmetic operators.
-  - Grasp the concept of a boolean and its usage.
-  - Learn about comparison operators and their usage in constructing boolean expressions and conditional statements.
+#### Lesson: Exploring Lists, Tuples, and Dictionaries
+- Lists: Create, modify, and manage lists using built-in methods.
+- Tuples: Understand tuples, their creation, and their contrast with lists.
+- Dictionaries: Create and manage dictionaries, emphasizing key-value pairs.
+- Evaluate the efficiency implications of different data structures.
 
-Lesson: Strings and Numbers 
-  - Strings
-    - Identify and create a string.
-    - Format strings using the format and f-string methods.
-    - Employ escape characters and raw strings to format strings with special characters.
-    - Access individual characters in a string through indexing.
-    Utilize basic string methods like len(), upper(), lower(), strip(), replace(), and split(), and employ web resources for additional methods.
-    - Manipulate strings using arithmetic operators, including concatenation and repetition.
-    - Understand the concept of string slicing to extract a portion of a string.
-    - Use string methods to manipulate the case, spacing, and other aspects of a string.
-    - Learn about special characters and their usage in Python strings.
-    - Understand the concept of raw strings and their usage.
+#### Lesson: Mastering Conditional Statements and Loops  
+- Control program flow using conditional statements.
+- Solicit user input and construct loops.
+- Understand loop control mechanisms and iterate over sequences.
+- Dive into advanced conditional constructs and error handling using try-except blocks.
+- Embrace list comprehensions for efficient list creation.
 
-  - Numbers
-    - Differentiate between integers and floats.
-    - Perform mathematical operations on numbers using arithmetic operators.
-    - Employ built-in functions for mathematical operations on numbers.
-    - Understand and manipulate the order of operations.
-    - Utilize the Math module for complex mathematical operations.
-    - Generate random numbers using the Random module.
-    - Work with infinite numbers using float and decimal modules, as well as the math module.
-    - Understand the concept of integers and floating-point numbers.
-    - Perform operations like addition, subtraction, multiplication, and division using arithmetic operators.
-    - Use the modulo operator and understand its use cases.
-    - Understand and implement exponentiation.
-    - Create and manipulate infinite numbers.
+#### Lesson: Exploring Functions and Modules
+- Understand functions, their creation, and execution.
+- Dive into modules, their import mechanisms, and built-in modules.
+- Grasp function arguments and their types.
+- Delve into recursion and its applications in Python.
 
+#### Lesson: File Operations and Dependency Management
+- File I/O: Manage files using various methods and handle I/O errors.
+- Dependencies: Understand, install, and manage Python dependencies.
+- Dive into binary file operations in Python.
 
-  Lesson: Exploring Lists, Tuples, and Dictionaries 
-- Lists
-  - Create a list and understand its utility.
-  - Use built-in list methods to manage list elements.
-  - Access individual list elements through indexing.
-  - Modify a list using indexing and slicing.
-  - Check for the presence of an element in a list using in and not in operators.
-  - Understand the concept of list mutability and the ability to modify an existing list element.
-  - Learn how to add elements to a list using the 'append' method.
-  - Understand how to use 'in' and 'not in' operators to check for the presence of an element in a list.
-- Tuples
-  - Understand what a tuple is, how to create one, and how it differs from a list.
-  - Understand the concept of a tuple, its creation, and how it differs from a list.
-  - Know the use cases for tuples and how they compare to lists in terms of mutability.
-  - Understand tuple methods and when to use them.
-- Dictionaries
-  - Create a dictionary and understand its utility.
-  - Manage key-value pairs in a dictionary - access, add, remove, and modify.
-  - Check for the presence of a key in a dictionary using in and not in operators.
-  - Access the keys, values, and key-value pairs in a dictionary using keys(), values(), and items() methods.
-
-Lesson: Mastering Conditional Statements and Loops 
-  - Master the use of conditional statements to control program flow.
-  - Employ the `input()` function to solicit user input.
-  - Grasp the usage of `if`, `elif`, and `else` keywords to construct conditional statements.
-  - Discover how to employ `and`, `or`, and `not` keywords to combine conditional statements.
-  - Grasp the technique of using the `if` statement to create nested conditional statements.
-  - Learn to construct loops using `while` and `for` keywords.
-  - Understand the application of `break` and `continue` keywords to control loop flow.
-  - Use `enumerate()` to iterate over a sequence and access each element's index.
-  - Discover the `range()` function to create a sequence of numbers.
-  - Use `enumerate()` to iterate over a sequence and access each element's index.
-
-Lesson: Exploring Functions and Modules 
-  - Discern what a function is and the process of creating one.
-  - Grasp the distinction between a function definition and a function call.
-  - Learn to utilize the `return` keyword to return a value from a function.
-  - Understand the concept of a module and the process to import one.
-  - Learn to employ the `from` keyword to import specific functions from a module.
-  - Learn to use the `as` keyword to alias a module or function.
-  - Understand the `if __name__ == "__main__"` conditional statement to manage a program's execution.
-  - Discover how to use the `sys` module to access command line arguments.
-
-Lesson: File Operations and Dependency Management
-
-  - File I/O
-    - Grasp how to employ the `open()` function to open and close files.
-    - Discover how to use `readline()`, `readlines()`, and `read()` methods to read data from a file.
-    - Learn to use `write()` and `writelines()` methods to write data to a file.
-    - Understand the usage of the `with` keyword to open and close files.
-    - Manage file I/O errors using try/except blocks.
-    - Discover the availability of the `os` module to access the file system, perform OS-related tasks, use the `json` module to read and write JSON files, and employ the csv module to read and write CSV files.
-
-  - Using Dependencies
-    - Understand the concept of a dependency and the process to install one.
-    - Learn to employ the `pip` command to install dependencies.
-    - Grasp how to use the `import` keyword to import dependencies.
-    - Understand pip and its application to manage dependencies.
-    - Learn to create and use a requirements.txt file to install dependencies both manually and using pip.
-
-Lesson: Error Management and Debugging
-
-- Understand the nature of an error and techniques to manage it.
-- Learn about different types of errors, how to interpret them, and importantly, how to find resources to rectify them.
-- Discover how to use `try`, `except`, `else`, and `finally` keywords to manage errors.
-
-
-Stretch
-- Learn to use the `raise` keyword to induce an error.
-- Understand how to use the `assert` keyword to test for errors.
-- Discover the `logging` module to log errors, and justifications for its preference over print statements.
-- Discover the `pdb` module, and its application to debug code.
-- Learn how to use the `traceback` module to print an error's stack trace.
-
-
+#### Lesson: Error Management and Debugging
+- Understand error types, their interpretation, and resolution.
+- Use debugging tools and techniques.
+- Emphasize the role of unit testing in software reliability.
+- 
 ##### Module 2 - Structured Data and Regex 
 
 Lesson: Introduction to Structured Data (JSON and CSV)
@@ -183,6 +104,5 @@ Lesson: Generator Comprehension
   - Learn how to use generators to iterate over large data sets.
   - Understand how the `yield` keyword works and how to use it to create generators.
   - Grasp how to use loops in conjunction with generators and the `next()` function to iterate over a generator.
-
 
 
