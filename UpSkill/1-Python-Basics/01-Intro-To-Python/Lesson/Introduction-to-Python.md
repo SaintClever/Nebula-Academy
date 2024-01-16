@@ -11,6 +11,8 @@ With technology shaping our world, learning a universal language like Python is 
 
 Our course offers a fulfilling journey through the world of Python programming, whether you want to construct web APIs, develop AI models, or analyze complex data. The course takes 120 hours to complete, with 80 hours of directed instruction and 40 hours devoted to practical, hands-on projects.
 
+Our appreciation extends profoundly to the cutting-edge language models GPT-3 and GPT-4, developed by OpenAI. Their capabilities in distilling and synthesizing complex information have been instrumental in structuring this Python course. Their contribution has not only ensured that the curriculum remains current and comprehensive but also has vividly demonstrated the transformative potential of artificial intelligence in the realm of education. As we embark on this learning journey, let us acknowledge the vital role these sophisticated AI models have played in shaping this course.
+
 Our goal is to do more than teach you Python syntax. We aim to motivate you by providing a solid foundation in Python that will lead to opportunities in different areas of the software industry. Our curriculum is carefully structured to cover a wide range of topics, from fundamental data structures and algorithms to more complex concepts like functional programming and object-oriented programming.
 
 Python is gaining popularity because it is simple and versatile, making it a top choice for both beginners and experienced developers. It can handle complex data types quickly and efficiently and is not limited to generic programming. As you progress through the course, you will learn about web scraping, data visualization, and API integration through projects that mimic real-world applications.

@@ -146,7 +146,6 @@ Each team member should pick two queries, implement them into the relevant class
 
 **📋 Rubric 📋**
 
-Certainly! Here's an example of a Markdown table that includes the criteria you provided:
 
 | Criteria                | Description                                                                                     |
 |-------------------------|-------------------------------------------------------------------------------------------------|
