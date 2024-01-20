@@ -25,22 +25,3 @@ Logical operators are used to combine conditional statements:
 
 
 - `not`: Reverses the result, returns `False` if the result is true.
-
-## Practice Exercises
-1. **Arithmetic Operations**
-   - Add `25` and `75` and print the result.
-   - Multiply `7` by `6` and display the outcome.
-
-2. **Boolean Expressions**
-   - Check if `15` is greater than `10` and print the result.
-   - Compare if `20` is equal to `20` and output the Boolean value.
-
-3. **Logical Operations**
-   - Use a logical `and` to determine if `10` is greater than `5` and `15` is less than `20`. Print the result.
-   - Apply `not` to invert the result of `5 == 5`.
-
-## Homework
-Write a Python script that:
-- Calculates and prints the result of `(50 - 5*6) / 4`.
-- Checks if `100` is not equal to `90` and prints the result.
-- Uses `and`, `or`, and `not` to evaluate `((5 > 3) and (10 < 12)) or not(15 < 20)` and prints the outcome.

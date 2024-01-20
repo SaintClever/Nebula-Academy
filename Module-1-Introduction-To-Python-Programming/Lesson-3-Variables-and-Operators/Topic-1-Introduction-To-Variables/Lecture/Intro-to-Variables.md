@@ -23,17 +23,3 @@ Python is dynamically typed, meaning the data type of a variable is set when you
 x = 4      # x is of type int
 x = "Sally" # Now x is of type str
 ```
-
-## Practice Exercises
-1. **Create and Print Variables**
-   - Create a variable named `my_name` and assign your name to it. Then print it.
-   - Now, create a variable `my_age` and assign your age. Print this, too.
-
-2. **Variable Reassignment**
-   - Start with `x = 10` and then reassign `x` to a string value, say `"Python"`. Print `x` after each assignment.
-
-## Homework
-Write a script that:
-- Declares a string variable `favorite_food`, an integer variable `quantity`, and a float variable `price`.
-- Changes `favorite_food` to a different food item.
-- Prints all variables before and after the change.
