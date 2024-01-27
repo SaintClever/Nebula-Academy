@@ -1,0 +1,22 @@
+Git Notes
+
+Install Python Pyenv
+pyenv install 3.12.1
+pyenv global 3.12.1
+
+
+Install Python with brew and add alias
+brew install git
+brew install python@3.12
+alias python=/opt/homebrew/bin/python3.12
+alias python3=/opt/homebrew/bin/python3.12
+
+
+Push to a different repo 
+git remote set-url --push origin user@example.com:repo.git
+
+
+Save your git edits from REMOTE repo WITHOUT replacing current changes from your repo
+git stash
+git pull
+git stash apply --index
