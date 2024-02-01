@@ -73,6 +73,7 @@ print()
 # Write a script demonstrating the use of infinity and NaN in Python. Show how to test for these values in a variable.
 
 # Nan
+print(math.nan)
 print(float("nan"), math.isnan(float("nan")))
 
 if math.isnan(float("nan")):
@@ -83,6 +84,7 @@ print()
 
 
 # infinity
+print(math.inf)
 print(float("inf"), float("-inf"))
 print(math.inf, -math.inf)
 
