@@ -1,6 +1,7 @@
 # Practice Assignments
 # Basic Arithmetic Operations:
 import math
+import random
 
 # Perform addition, subtraction, multiplication, and division with integers and floats. Print the results.
 # Using Built-In Functions:
@@ -58,9 +59,6 @@ calculator()
 
 # Create a script that generates and prints 5 random integers between 1 and 100.
 # Infinite and NaN (Not a Number) Concepts:
-
-import random
-
 print(random.sample(range(1, 100), 5))
 
 # or
@@ -73,8 +71,6 @@ print()
 
 
 # Write a script demonstrating the use of infinity and NaN in Python. Show how to test for these values in a variable.
-
-import math
 
 # Nan
 print(float("nan"), math.isnan(float("nan")))
