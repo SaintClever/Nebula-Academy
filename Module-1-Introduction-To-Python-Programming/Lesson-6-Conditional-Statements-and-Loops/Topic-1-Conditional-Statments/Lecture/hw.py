@@ -7,7 +7,6 @@
 # Output: Converted temperature.
 
 temp = input("Temp ex: 32F or 100C: ").lower()
-converted_temp = ""
 
 if "f" in temp or "c" in temp:
     int_temp = int(temp[:-1])
