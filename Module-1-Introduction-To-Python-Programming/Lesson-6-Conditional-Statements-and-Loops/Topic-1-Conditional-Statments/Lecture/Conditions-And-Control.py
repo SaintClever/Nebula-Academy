@@ -18,7 +18,7 @@ print()
 # Output: True if a leap year, False otherwise.
 leap_year = int(input("leap year: "))
 
-if leap_year % 4 == 0:
+if leap_year % 4 == 0 or leap_year % 100 == 0 or leap_year == 400:
     print("leap year")
 else:
     print("no leap")
