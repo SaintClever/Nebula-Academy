@@ -10,10 +10,7 @@ temp = input("Temp ex: 32F or 100C: ").lower()
 converted_temp = ""
 
 if "f" in temp or "c" in temp:
-    for i in temp[:-1]:
-        converted_temp += i
-        int_temp = int(converted_temp)
-
+    int_temp = int(temp[:-1])
     celsius = (int_temp - 32) * 5 / 9
     fahrenheit = (int_temp * 9 / 5) + 32
 
