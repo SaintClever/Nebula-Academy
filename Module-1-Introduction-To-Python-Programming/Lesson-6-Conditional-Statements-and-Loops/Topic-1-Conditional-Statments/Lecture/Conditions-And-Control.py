@@ -30,7 +30,7 @@ print()
 # Input: Age as an integer.
 # Output: The life stage.
 
-life_stage = int(input("life stage: "))
+life_stage = float(input("life stage: "))
 
 if life_stage < 18 and life_stage >= 0:
     print("child")
