@@ -15,9 +15,9 @@ if "f" in temp or "c" in temp:
     fahrenheit = (int_temp * 9 / 5) + 32
 
     if "f" in temp:
-        print(f"{celsius}C")
+        print(f"{celsius}°C")
     elif "c" in temp:
-        print(f"{fahrenheit}F")
+        print(f"{fahrenheit}°F")
 else:
     print("Try adding F or C, ex: 35f")
 
