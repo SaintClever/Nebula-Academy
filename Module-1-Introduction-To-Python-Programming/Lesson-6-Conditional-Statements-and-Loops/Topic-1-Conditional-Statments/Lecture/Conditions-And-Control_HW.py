@@ -8,7 +8,7 @@
 
 temp = input("Temp ex: 32F or 100C: ").lower()
 
-if "f" in temp or "c" in temp:
+if temp[-1] in ["c", "f"]:
     int_temp = int(temp[:-1])
     celsius = (int_temp - 32) * 5 / 9
     fahrenheit = (int_temp * 9 / 5) + 32
