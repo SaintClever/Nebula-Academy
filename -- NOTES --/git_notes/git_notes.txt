@@ -1,15 +1,8 @@
 Git Notes
 
-Install Python Pyenv
-pyenv install 3.12.1
-pyenv global 3.12.1
-
-
 Install Python with brew and add alias
-brew install git
-brew install python@3.12
-alias python=/opt/homebrew/bin/python3.12
-alias python3=/opt/homebrew/bin/python3.12
+alias python='/usr/local/bin/python3'
+alias python3='/usr/local/bin/python3'
 
 
 Push to a different repo 
