@@ -70,5 +70,11 @@ max_of_three(867, 5, 309)
 def concat_strings(*args):
     print(args)
 
+    sentence = ""
+    for i in args:
+        sentence += i
 
-concat_strings("Hello World!", "Bye sweet World!")
+    print(sentence)
+
+
+concat_strings("Hello World! ", "Bye sweet World!")
