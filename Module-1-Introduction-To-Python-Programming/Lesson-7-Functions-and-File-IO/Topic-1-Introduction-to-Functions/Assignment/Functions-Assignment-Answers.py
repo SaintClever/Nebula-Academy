@@ -71,4 +71,4 @@ def concat_strings(*args):
     print(args)
 
 
-concat_strings("Hello " "World!", "Bye " "sweet " "World!")
+concat_strings("Hello World!", "Bye sweet World!")
