@@ -37,7 +37,9 @@ for dir_path, dir_names, files in os.walk(input("Directory: ")):
 
         try:
             print(
-                f"\n{file}\n{os.stat(file_path).st_size} Bytes\n{os.stat(file_path).st_size / (1024**2):.2f} MB"
+                f"\n{file}\n"
+                f"{os.stat(file_path).st_size} Bytes\n"
+                f"{os.stat(file_path).st_size / (1024**2):.2f} MB"
             )
         except FileNotFoundError:
             pass
