@@ -17,13 +17,14 @@ with open("text_editor.txt", "a") as text_editor:
             print(text_editor.read())
     else:
         text_editor.write(f"{user_input}\n")
+        print("Note added!")
 
 
-# ### 2. Log File Summary
+### 2. Log File Summary
 # Write a Python program to read a log file (assume it's a text file with each entry on a new line) and print a summary showing how many lines are in the file.
 
 # ```python
-# # Hint: Open the log file in read mode, use a loop to count the lines, and then print the count.
+# Hint: Open the log file in read mode, use a loop to count the lines, and then print the count.
 # ```
 
 with open("text_editor.txt", "r") as text_editor:
