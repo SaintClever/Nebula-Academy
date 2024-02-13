@@ -36,6 +36,22 @@
 # # Hint: Read the file's content into a list, update the specific line, then write the list back to the file.
 # ```
 
+data = []
+
+with open("text_editor.txt", "r") as text_editor:
+    print("What line to replace:\n")
+
+    for i, line in enumerate(text_editor.readlines()):
+        print(f'{i}: {line.replace("\n", "")}')
+        data.append(line.replace("\n", ""))
+
+with open("text_editor.txt", "w") as text_editor:
+    line_number = int(input("\nChoose line number: "))
+    data[line_number] = input(f"New text for {line_number}: ")
+
+    for new_line in data:
+        text_editor.write(f"{new_line}\n")
+
 
 # ### 4. List and Count Words in a Directory
 # Develop a Python script that lists all the `.txt` files in a given directory and counts the total number of words across all these text files.
