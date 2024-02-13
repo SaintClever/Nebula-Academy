@@ -10,7 +10,7 @@ import os
 
 
 with open("text_editor.txt", "a") as text_editor:
-    user_input = input("Text Editor (r to read note): ")
+    user_input: str = input("Text Editor (r to read note): ")
 
     if user_input == "r":
         with open("text_editor.txt") as text_editor:
@@ -39,8 +39,8 @@ with open("text_editor.txt", "r") as text_editor:
 # # Hint: Read the file's content into a list, update the specific line, then write the list back to the file.
 # ```
 
-DATA = []
-# DATA = {}
+DATA: list = []
+# DATA: dict = {}
 
 with open("text_editor.txt", "r") as text_editor:
     print("What line to replace:\n")
