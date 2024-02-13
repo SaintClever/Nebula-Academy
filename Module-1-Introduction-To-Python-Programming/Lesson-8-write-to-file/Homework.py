@@ -39,29 +39,29 @@ with open("text_editor.txt", "r") as text_editor:
 # # Hint: Read the file's content into a list, update the specific line, then write the list back to the file.
 # ```
 
-# data = []
-data = {}
+DATA = []
+# DATA = {}
 
 with open("text_editor.txt", "r") as text_editor:
     print("What line to replace:\n")
 
     for i, line in enumerate(text_editor.readlines()):
         print(f'{i}: {line.replace("\n", "")}')
-        # data.append(line.replace("\n", ""))
-        data[i] = line.replace("\n", "")
+        DATA.append(line.replace("\n", ""))
+        # DATA[i] = line.replace("\n", "")
 
 with open("text_editor.txt", "w") as text_editor:
     line_number = int(input("\nChoose line number: "))
-    data[line_number] = input(f"New text for {line_number}: ")
+    DATA[line_number] = input(f"New text for {line_number}: ")
     print("")
 
-    # for i, new_line in data:
-    #     print(f"\n{i}: {new_line}")
-    #     text_editor.write(f"{new_line}")
+    for i, new_line in DATA:
+        print(f"\n{i}: {new_line}")
+        text_editor.write(f"{new_line}")
 
-    for key, value in data.items():
-        print(f"{key}: {value}")
-        text_editor.write(f"{value}\n")
+    # for key, value in DATA.items():
+    #     print(f"{key}: {value}")
+    #     text_editor.write(f"{value}\n")
 
 
 # ### 4. List and Count Words in a Directory
