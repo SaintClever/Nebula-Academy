@@ -19,7 +19,7 @@ consider "a, e, i, o, u", lowercase and /or spaces
 
 
 def get_count(sentence: str) -> int:
-    vowels: list = ["a", "e", "i", "o", "u"]
+    vowels: str = "aeiou"
     return len("".join(letter for letter in sentence if letter in vowels))
 
 
