@@ -1,0 +1,9 @@
+{
+  "name": "Alex",
+  "age": 29,
+  "contact": {
+    "email": "alex@example.com",
+    "phone": "123-456-7890"
+  },
+  "skills": ["Python", "Data Analysis", "Machine Learning"]
+}

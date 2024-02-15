@@ -1,0 +1,7 @@
+{
+  "employee": {
+    "name": "John Doe",
+    "roles": ["Admin", "User"], 
+    "email": "johndoe@example.com"
+  }
+}

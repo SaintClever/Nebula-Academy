@@ -1,0 +1,15 @@
+{
+    "grass": "green",
+    "human_colors": [
+        "red",
+        "white",
+        "blue",
+        "green",
+        "black",
+        "yellow",
+        "pink",
+        "purple"
+    ],
+    "ketchup": "red",
+    "sky": "blue"
+}
