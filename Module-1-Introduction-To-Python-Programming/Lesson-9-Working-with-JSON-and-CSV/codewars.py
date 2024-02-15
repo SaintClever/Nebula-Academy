@@ -32,7 +32,7 @@ def disemvowel(string_: str) -> str:
     sentence: str = ""
 
     for letter in string_:
-        if letter in vowels or letter in vowels_upper_case:
+        if letter in vowels + vowels_upper_case:
             list(string_).remove(letter)
         else:
             sentence += letter
