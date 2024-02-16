@@ -8,5 +8,5 @@ data = response.json()
 
 # Example of accessing data
 for entry in data:
-    print(entry['text'])
-    print('=========================')
+    print(entry["text"])
+    print("=========================")
