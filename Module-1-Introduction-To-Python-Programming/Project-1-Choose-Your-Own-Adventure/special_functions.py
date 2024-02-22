@@ -1,4 +1,4 @@
-import random
+import random, os
 
 
 def random_question():
@@ -13,3 +13,7 @@ def random_question():
     if user_input == questions[answer].lower():
         return True
     return False
+
+
+def clear_terminal():
+    os.system("cls" if os.name == "nt" else "clear")
