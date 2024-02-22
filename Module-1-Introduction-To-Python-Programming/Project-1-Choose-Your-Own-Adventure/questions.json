@@ -1,0 +1,34 @@
+[
+  {
+    "question": "Which operation can be performed between two string variables?",
+    "a": "Multiplication",
+    "b": "Concatenation",
+    "c": "Division",
+    "d": "Subtraction",
+    "answer": "Concatenation"
+  },
+  {
+    "question": "What logical operator is used to reverse the result of a condition?",
+    "a": "and",
+    "b": "or",
+    "c": "not",
+    "d": "xor",
+    "answer": "not"
+  },
+  {
+    "question": "What will the pop() method return if used on the list [1, 'hello', 3.14] without specifying an index?",
+    "a": 1,
+    "b": "[]",
+    "c": 3.14,
+    "d": "'hello'",
+    "answer": 3.14
+  },
+  {
+    "question": "In a for loop, what does the range(1, 10, 2) function call do?",
+    "a": "Iterates from 1 to 9, excluding 10, with steps of 2",
+    "b": "Iterates from 1 to 10, including 10, with steps of 2",
+    "c": "Iterates from 1 to 9, including 10, in reverse with steps of 2",
+    "d": "Iterates from 1 to 10, excluding 10, in reverse with steps of 2",
+    "answer": "Iterates from 1 to 9, excluding 10, with steps of 2"
+  }
+]

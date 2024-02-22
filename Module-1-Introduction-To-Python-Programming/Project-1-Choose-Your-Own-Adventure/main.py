@@ -1,144 +1,93 @@
-from special_functions import random_question, clear_terminal
+from special_functions import clear_terminal, random_question
 from rich import print
 from rich.console import Console
+import json, random
+
+quit_: list = ["e", "q"]
 
 console = Console()
 
+def json_load() -> dict:
+    with open("questions.json", "r") as f:
+        random_question = json.load(f)
+        return random_question[random.randint(0, len(random_question) - 1)]
+
 
 def final_room():
-    question_answer = input(
-        """
-        Congrats, You're on the final room's question!
-        
-        Which logical operator would you use to check if a number is both positive and even?
+    question = json_load()
+    user_input = input(f"{question["question"]}\n\na. {question["a"]}\nb. {question["b"]}\nc. {question["c"]}\nd. {question["d"]}\n\nAnswer: ")
 
-        a. not
-        b. or
-        c. is
-        d. and
-
-        Answer: """
-    )
-
-    if question_answer == "a":
+    if question.get(user_input) == question["answer"]:
         clear_terminal()
-        console.print(
-            "Horay! You completed the game!. You survied Nebula Pymanji\n",
-            style="bold green",
-        )
-    elif question_answer == "r":
+        console.print("Horay! You completed the game!. You survied Nebula Pymanji\n", style="bold green")
+    elif user_input == "r":
         clear_terminal()
         if random_question():
-            console.print(
-                "Great JOB! You're going to the Final stage", style="bold green"
-            )
+            console.print("Great JOB! You're going to the Final stage", style="bold green")
             final_room()
         else:
-            console.print("\t\nMission incomplete :(", style="bold red")
+            console.print("\nMission incomplete :(", style="bold red")
             exit()
+    elif user_input in quit_:
+        exit()
     else:
         clear_terminal()
-        print(
-            """\tLet's try that again or TYPE "r" for a random question that may lead to death or a quick WIN!"""
-        )
-
+        print('Let\'s try that again or TYPE "r" for a random question that may lead to death or a quick WIN!')
         final_room()
 
 
 def first_question():
-    question_answer = input(
-        """
-        Congrats, You're on question number 2!
+    question = json_load()
+    user_input = input(f"{question["question"]}\n\na. {question["a"]}\nb. {question["b"]}\nc. {question["c"]}\nd. {question["d"]}\n\nAnswer: ")
 
-        What function is used to open a file in Python?\n
-        
-        a. open()
-        b. file.open()
-        c. file()
-        d. open_file()
-
-        Answer: """
-    )
-
-    if question_answer == "a":
+    if question.get(user_input) == question["answer"]:
         clear_terminal()
         final_room()
-    elif question_answer == "r":
+    elif user_input == "r":
         clear_terminal()
         if random_question():
-            console.print(
-                "Great JOB! You're going to the Final stage", style="bold green"
-            )
+            console.print("Great JOB! You're going to the Final stage", style="bold green")
             final_room()
         else:
             console.print("\t\nMission incomplete :(", style="bold red")
             exit()
+    elif user_input in quit_:
+        exit()
     else:
         clear_terminal()
-        print(
-            """\tLet's try that again or TYPE "r" for a random question that may lead to death or a quick WIN!"""
-        )
-
+        print('Let\'s try that again or TYPE "r" for a random question that may lead to death or a quick WIN!')
         first_question()
 
 
 def intro_scene():
-    question_answer = input(
-        """
-        How do you generate a random integer between 1 and 10 using Python?\n
-        
-        a. random.randint(1, 10)
-        b. random.random(1, 10)
-        c. random.randrange(1, 11)
-        d. random.range(1, 10)
+    question = json_load()
+    user_input = input(f"{question["question"]}\n\na. {question["a"]}\nb. {question["b"]}\nc. {question["c"]}\nd. {question["d"]}\n\nAnswer: ")
 
-        Answer: """
-    )
-
-    if question_answer == "a":
+    if question.get(user_input) == question["answer"]:
         clear_terminal()
         first_question()
-    elif question_answer == "r":
+    elif user_input == "r":
         clear_terminal()
         if random_question():
-            console.print(
-                "Great JOB! You're going to the Final stage", style="bold green"
-            )
+            console.print("Great JOB! You're going to the Final stage", style="bold green")
             final_room()
         else:
             console.print("Mission incomplete :(", style="bold red")
             exit()
+    elif user_input in quit_:
+        exit()
     else:
         clear_terminal()
-        print(
-            """\tLet's try that again or TYPE "r" for a random question that may lead to death or a quick WIN!"""
-        )
+        print('Let\'s try that again or TYPE "r" for a random question that may lead to death or a quick WIN!')
         intro_scene()
 
 
 while True:
-    console.print(
-        """
-        Welcome to Nebula Pymanji!
-        the only way to make it out Graduate / alive is to solve python questions.
-        You can exit the game at any time by type Q or E, quiting leads to your doom!
-        """,
-        style="bold yellow",
-    )
+    console.print("\nWelcome to Nebula Pymanji!\n\nthe only way to make it out Graduate / alive is to solve python questions.\nYou can exit the game at any time by type Q or E, quiting leads to your doom!\n", style="bold yellow")
 
-    name = input(
-        """
-        What's your name: """
-    )
+    name = input("What's your name: ")
 
     clear_terminal()
-
-    console.print(
-        f"""
-        Good luck {name}!
-        """,
-        style="bold yellow",
-    )
-
+    console.print(f"Good luck {name}!\n", style="bold yellow")
     intro_scene()
     break
