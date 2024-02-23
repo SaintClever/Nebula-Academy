@@ -32,7 +32,7 @@ def final_room():
         exit()
     else:
         clear_terminal()
-        print('Let\'s try that again or TYPE "r" for a random question that may lead to death or a quick WIN!')
+        print('Let\'s try that again or TYPE "r" for a random question that may lead to death or a quick WIN!\n')
         final_room()
 
 
@@ -55,7 +55,7 @@ def first_question():
         exit()
     else:
         clear_terminal()
-        print('Let\'s try that again or TYPE "r" for a random question that may lead to death or a quick WIN!')
+        print('Let\'s try that again or TYPE "r" for a random question that may lead to death or a quick WIN!\n')
         first_question()
 
 
@@ -78,7 +78,7 @@ def intro_scene():
         exit()
     else:
         clear_terminal()
-        print('Let\'s try that again or TYPE "r" for a random question that may lead to death or a quick WIN!')
+        print('Let\'s try that again or TYPE "r" for a random question that may lead to death or a quick WIN!\n')
         intro_scene()
 
 
