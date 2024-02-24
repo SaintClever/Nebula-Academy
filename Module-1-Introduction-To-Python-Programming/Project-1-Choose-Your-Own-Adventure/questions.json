@@ -94,5 +94,77 @@
     "c": "12",
     "d": "5",
     "answer": "7"
+  },
+  {
+    "question": "Which method is used to insert an element at a specific index in a list?",
+    "a": "add()",
+    "b": "push()",
+    "c": "insert()",
+    "d": "place()",
+    "answer": "insert()"
+  },
+  {
+    "question": "How do you convert a Python dictionary to a JSON string?",
+    "a": "Using json.dumps()",
+    "b": "Using json.stringify()",
+    "c": "Using json.parse()",
+    "d": "Using json.loads()",
+    "answer": "Using json.dumps()"
+  },
+  {
+    "question": "Nested conditional statements are used for:",
+    "a": "Simplifying complex conditions into a single line",
+    "b": "Hierarchical decision-making",
+    "c": "Executing the same code block multiple times",
+    "d": "Avoiding the use of logical operators",
+    "answer": "Hierarchical decision-making"
+  },
+  {
+    "question": "How do you ensure a `while` loop is executed at least once regardless of the condition",
+    "a": "By using a do-while loop",
+    "b": "By setting the condition to True initially",
+    "c": "By writing the loop's code block before the while statement",
+    "d": "By using a for loop instead",
+    "answer": "By setting the condition to True initially"
+  },
+  {
+    "question": "Which mode allows you to append content to an existing file without overwriting it?",
+    "a": "'a'",
+    "b": "'r+'",
+    "c": "'x'",
+    "d": "'w+'",
+    "answer": "'a'"
+  },
+  {
+    "question": "Which method is used to format strings in Python?",
+    "a": "add()",
+    "b": "append()",
+    "c": "concat()",
+    "d": "format()",
+    "answer": "format()"
+  },
+  {
+    "question": "Which method is used to return a view of all keys in a dictionary?",
+    "a": "my_dict.keys()",
+    "b": "my_dict.values()",
+    "c": "my_dict.items()",
+    "d": "my_dict.all_keys()",
+    "answer": "my_dict.keys()"
+  },
+  {
+    "question": "What is the data type used to represent whole numbers without decimals in Python?",
+    "a": "Float",
+    "b": "Boolean",
+    "c": "String",
+    "d": "Integer",
+    "answer": "Integer"
+  },
+  {
+    "question": "Given the Python code result = 10 + 20 * 30, what is the value of result?",
+    "a": "900",
+    "b": "610",
+    "c": "300",
+    "d": "600",
+    "answer": "610"
   }
 ]
