@@ -10,12 +10,13 @@ celsius = [32, -17, 40, 5, -7, 20, -1, 16, -16, 4]
 
 
 def celsius_to_fahrenheit(c):
-    fahrenheit = (c * 9 / 5) + 32
-    return float(f"{fahrenheit:.2f}")
+    return float(f"{(c * 9 / 5) + 32:.2f}")
 
 
 fahrenheit_func = print(list(map(celsius_to_fahrenheit, celsius)))
-fahrenheit_lambda = print(list(map(lambda c: (c * 9 // 5) + 32, celsius)))
+fahrenheit_lambda = print(
+    list(map(lambda c: float(f"{(c * 9 / 5) + 32:.2f}"), celsius))
+)
 
 
 # 2. **Filtering Data: FILTER**
