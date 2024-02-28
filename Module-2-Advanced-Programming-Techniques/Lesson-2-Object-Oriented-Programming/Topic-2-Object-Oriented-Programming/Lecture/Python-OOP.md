@@ -152,3 +152,9 @@ Remember, mastering OOP in Python is a continuous learning and application journ
 ### Tasks:
 1. **Employee Class:** Construct an `Employee` class with data such as employee ID, name, and position.
 2. **Department Class:** Create a `Department` class that manages a group of employees, with methods to add and remove employees.
+
+
+### Practical Exercises:
+1. **Car Class Implementation:** Create a Car class with methods like start_engine.
+2. **Electric Car Extension:** Develop an ElectricCar subclass with unique attributes.
+3. **Polymorphism Demonstration:** Use method overriding to demonstrate polymorphism with animal classes.
