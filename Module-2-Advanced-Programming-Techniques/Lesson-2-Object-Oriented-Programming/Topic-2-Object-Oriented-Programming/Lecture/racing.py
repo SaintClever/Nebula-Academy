@@ -126,12 +126,10 @@ print()
 
 
 def race(racers):
-
     for racer, status in racers.items():
         if "finish line" in status:
             return print(f"WINNER {racer}!!!")
-        else:
-            return print("Pick up the speed!!!")
+        return print("Pick up the speed!!!")
 
 
 race(
@@ -141,7 +139,3 @@ race(
         "tesla": tesla.move(random.randint(0, 200)),
     }
 )
-
-# mazda.breakdown(float(random.randint(0, 5))),
-# yamaha.breakdown(float(random.randint(0, 5))),
-# tesla.breakdown(float(random.randint(0, 5))),
