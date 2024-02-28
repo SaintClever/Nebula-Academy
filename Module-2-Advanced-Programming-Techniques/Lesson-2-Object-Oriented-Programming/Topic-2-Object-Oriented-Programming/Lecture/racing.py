@@ -46,13 +46,7 @@ class Vechicle:
             return f"Your {self.name}'s engine became unreliable... {self.reliability}"
         return f"No worries, your {self.name} seems reilable at {self.reliability}"
 
-    def race(self, distance):
-        finish_line = 200
-
-        while distance != finish_line:
-            return ...
-
-    def __str__(self):
+    def __repr__(self):
         return f"{self.name}: speed={self.speed}, reliability={self.reliability}"
 
 
