@@ -13,16 +13,33 @@
 
 
 class Vechicle:
-    def __init__(self, name: str, speed: int = 0, reliability: int = 0):
+    def __init__(self, name, speed, reliability):
         self.name = name
         self.speed = speed
         self.reliability = reliability
 
-    def move(self):
-        return self.speed
+    def move(self, drivers_speed: int = 0):
+        if drivers_speed > 160:
+            self.reliability -= 10
+            return f"Your {self.name} is going too FAST!!! Your reliability rate is decreasing! It's now {self.reliability}"
 
-    def breakdown(self):
-        return self.reliability
+        elif drivers_speed < 80 and drivers_speed > 65:
+            self.speed += 10
+            return f"Pick up the pace! Now your current speed is {self.speed}! wow!"
+        else:
+            return f"Are you sleeping at the wheel?!?!"
+
+    def breakdown(self, tune_ups: int = 0):
+        if tune_ups < 5:
+            self.reliability -= 1
+            return f"Your {self.name}'s engine became unreliable... {self.reliability}"
+        return f"No worries, your {self.name} seems reilable at {self.reliability}"
+
+    def race(self, distance):
+        finish_line = 200
+
+        while distance != finish_line:
+            return ...
 
     def __str__(self):
         return f"{self.name}: speed={self.speed}, reliability={self.reliability}"
@@ -41,14 +58,46 @@ class Car(Vechicle):
         super().__init__("Mazda: RX-7", 120, 4.0)
 
 
+mazda = Car()
+print(mazda.name)
+print(mazda.move(180))
+print(mazda.breakdown(3))
+print()
+
+
 class Motorcycle(Vechicle):
     def __init__(self):
         super().__init__("Yamaha: R1", 182, 4.5)
+
+    def move(self, drivers_speed: int = 0):
+        if drivers_speed > 160:
+            self.reliability -= 10
+            return f"Your {self.name} is going too FAST!!! Your reliability rate is decreasing! It's now {self.reliability}"
+        elif drivers_speed < 60:
+            return "No time to while on the track!"
+
+
+yamaha = Motorcycle()
+print(yamaha.name)
+print(yamaha.move(6))
+print(yamaha.breakdown(4))
+print()
 
 
 class Truck(Vechicle):
     def __init__(self):
         super().__init__("Tesla: Cybertruck", 130, 5.0)
+
+    def ram(self):
+        return "Breaking thru the finish line Elon!"
+
+
+tesla = Truck()
+print(tesla.name)
+print(tesla.move(120))
+print(tesla.breakdown(4))
+print(tesla.ram())
+print()
 
 
 # ### Problem 3: Implement the Race Function
