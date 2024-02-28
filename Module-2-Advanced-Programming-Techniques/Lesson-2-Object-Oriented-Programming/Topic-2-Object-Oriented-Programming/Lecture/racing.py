@@ -35,7 +35,7 @@ class Vechicle:
             self.speed += 10
             return f"Pick up the pace! Now your current speed is now {self.speed}! wow!"
         elif drivers_speed <= 150 and drivers_speed > 100:
-            # this the key words "finish line" to trigger winner
+            # Using the key words "finish line" to trigger winner
             return f"Your're at the finish line! GO GO!"
         else:
             return f"Are you sleeping at the wheel?!?!"
