@@ -126,9 +126,21 @@ print()
 
 
 def race(racers):
+    winners = []
+
     for racer, status in racers.items():
         if "finish line" in status:
-            return print(f"WINNER {racer}!!!")
+            winners.append(racer)
+
+    if len(winners) > 1:
+        tie = []
+        for winner in winners:
+            tie.append(winner)
+            print(f"WINNER {winner}!!!")
+        return print(f"Tie race ladies and gents! Between: {tie}")
+    elif len(winners) == 1:
+        return print(f"WINNER {winners[0]}!!!")
+    else:
         return print("Pick up the speed!!!")
 
 
