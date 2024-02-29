@@ -29,7 +29,7 @@ class Vechicle:
 
     def move(self, drivers_speed: int = 0):
         if drivers_speed > 180:
-            self.reliability -= 10
+            self.reliability -= 5
             return f"Your {self.name} is going too FAST!!! Your reliability rate is decreasing! It's now {self.reliability}"
         elif drivers_speed < 95:
             self.speed += 10
@@ -123,6 +123,7 @@ def race(racers):
     winners = []
 
     for racer, status in racers.items():
+        print(racer + ": " + status)
         if "finish line" in status:
             winners.append(racer)
 
