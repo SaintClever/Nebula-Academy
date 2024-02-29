@@ -119,6 +119,10 @@ print()
 # Your `race` function will need to keep track of each vehicle's progress. Use a loop to simulate each "tick" of the race, where vehicles have the chance to move forward or experience a breakdown. Keep track of each vehicle's distance covered and compare it to the total race distance to determine when a vehicle has won the race. Remember to factor in the possibility of a vehicle breaking down, which could affect its ability to finish.
 
 
+print("\t")
+print("\U0001F3C1" * 3, " RACERS 3, 2, 1... START!!! ", "\U0001F3C1" * 3, "\n")
+
+
 def race(racers):
     winners = []
 
@@ -131,12 +135,20 @@ def race(racers):
         tie = []
         for winner in winners:
             tie.append(winner)
-            print(f"WINNER {winner}!!!")
+            print(f"\n\U0001F3C1 WINNER {winner} \U0001F3C1!!!")
         return print(f"Tie race ladies and gents! Between: {tie}")
     elif len(winners) == 1:
-        return print(f"WINNER {winners[0]}!!!")
+        return print(f"\n\U0001F3C1 WINNER {winners[0]} \U0001F3C1!!!")
     else:
-        return print("Pick up the speed!!!")
+        print("We have a few more laps. Take a pitstop or pick up the speed!!!\n")
+        print("\U0001F3CE \U0001F4A8", (" = " * 25), "\n")
+        race(
+            {
+                "mazda": mazda.move(random.randint(0, 200)),
+                "yamaha": yamaha.move(random.randint(0, 200)),
+                "tesla": tesla.move(random.randint(0, 200)),
+            }
+        )
 
 
 race(
