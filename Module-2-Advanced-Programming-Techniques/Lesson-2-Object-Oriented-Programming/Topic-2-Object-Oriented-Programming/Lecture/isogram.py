@@ -18,18 +18,22 @@ def is_isogram(word: str) -> bool:
     # return False
 
     # VERSION 2
-    word = " ".join(word.lower()).split(" ")
-
+    # word = " ".join(word.lower()).split()
     # for i in word:
     #     if word.count(i) > 1:
     #         return False
     # return True
 
     # VERSION 3
+    # word = " ".join(word.lower()).split()
     # return False if len([i for i in word if word.count(i) > 1]) > 1 else True
 
     # VERSION 4
-    return True if [i for i in word if word.count(i) > 1] == [] else False
+    # word = " ".join(word.lower()).split()
+    # return True if [i for i in word if word.count(i) > 1] == [] else False
+
+    # VERSION 5
+    return len(word) == len(set(" ".join(word.lower()).split()))
 
 
 print(is_isogram("Dermatoglyphics"))
