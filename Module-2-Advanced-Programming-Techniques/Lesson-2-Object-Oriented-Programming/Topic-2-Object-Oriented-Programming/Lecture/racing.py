@@ -145,7 +145,7 @@ def race(racers):
         return print(f"\n\U0001F3C1 WINNER {winners[0]} \U0001F3C1!!!")
     else:
         print("We have a few more laps. Take a pitstop or pick up the speed!!!\n")
-        # print("\U0001F3CE \U0001F4A8", (" = " * 25), "\n")
+        print("\U0001F3CE \U0001F4A8", (" = " * 25), "\n")
 
         race(
             {
