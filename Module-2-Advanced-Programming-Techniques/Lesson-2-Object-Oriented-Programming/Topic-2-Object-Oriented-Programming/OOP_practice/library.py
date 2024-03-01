@@ -57,7 +57,21 @@ class Library:
         return self.books
 
     def borrow_book(self, isbn):
-        # TODO!
+        # TODO: If there is one available book remove it from list else if there are multiple available books remove one available copy
+        isbns_available_copies = [
+            {"isbn": book.isbn, "available_copies": book.available_copies}
+            for book in self.books
+        ]
+
+        print(isbns_available_copies)
+
+        for i in isbns_available_copies:
+            print(i, isbn)
+            # TODO: if isbn exist and availabiliy is greater 1 or greater you can borrow
+            print(isbn == i.get("isbn"), i.get("available_copies") >= 1)
+            # TODO: else isbn doesn't exist
+            # TODO: else there are no available copies to borrow
+
         isbn_numbers = [book.isbn for book in self.books]
 
         if isbn in isbn_numbers:
