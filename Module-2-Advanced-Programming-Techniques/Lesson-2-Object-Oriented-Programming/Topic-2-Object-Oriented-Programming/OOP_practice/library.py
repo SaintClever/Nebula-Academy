@@ -1,3 +1,6 @@
+import pprint
+
+
 class Book:
     def __init__(self, title, author, isbn, available_copies):
         self.title = title
@@ -9,25 +12,52 @@ class Book:
         return f"{self.title}\n{self.author}\n{self.isbn}"
 
 
-class Library(Book):
+class Library:
     def __init__(self, books: list = []):
         self.books = books
 
     def add_book(self, book):
+        """Add Book"""
+        # Add new book
         if book not in self.books:
             self.books.append(book)
-            book_titles = [book.title for book in self.books]
+            books = [
+                {
+                    "title": book.title,
+                    "author": book.author,
+                    "isbn": book.isbn,
+                    "available_copies": book.available_copies,
+                }
+                for book in self.books
+            ]
+            print(f"{book.title} added to Library: ")
+            pprint.pprint(books)
+        # Add additional copy if book already exist
+        else:
+            book.available_copies += 1
+            print(
+                f"Additional copy available for {book.title}: copies {book.available_copies}"
+            )
 
-        print(f"{book.title} added to Library: {book_titles}")
         return self.books
 
     def display_books(self):
-        book_titles = [book.title for book in self.books]
-        print(f"Display current books available: {book_titles}")
+        """Display Books"""
+        books = [
+            {
+                "title": book.title,
+                "author": book.author,
+                "isbn": book.isbn,
+                "available_copies": book.available_copies,
+            }
+            for book in self.books
+        ]
+        print(f"Display current books available: ")
+        pprint.pprint(books)
         return self.books
 
     def borrow_book(self, isbn):
-
+        # TODO!
         isbn_numbers = [book.isbn for book in self.books]
 
         if isbn in isbn_numbers:
@@ -70,13 +100,21 @@ print()
 
 library = Library()
 library.add_book(book1)
+print()
 library.display_books()
 print()
 
 library.add_book(book2)
+print()
+library.display_books()
+print()
+
+library.add_book(book2)
+print()
 library.display_books()
 print()
 
 library.borrow_book("978-0743273565")
+print()
 library.display_books()
 print()
