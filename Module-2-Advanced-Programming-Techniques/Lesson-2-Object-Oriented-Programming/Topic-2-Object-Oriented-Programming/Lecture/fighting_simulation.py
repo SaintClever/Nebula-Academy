@@ -102,6 +102,8 @@ battle(spiderman, venom)
 # ### Challenge 2: Battle Royale 🎯
 # **Task**: Create a function `battle_royale(participants)` where `participants` is a list of `Character` instances. This function should simulate a free-for-all battle where each character randomly chooses another to attack each turn. The battle continues until only one character is left standing.
 
+def battle_royale(participants):
+
 # #### Hint
 # You'll need a way to randomly select targets for each character's attack, ensuring that a character cannot target themselves and only targets alive opponents. After each turn, check if only one character remains alive, and declare them the winner. Consider how the dynamics of multiple participants might affect the implementation of special abilities and strategies.
 
