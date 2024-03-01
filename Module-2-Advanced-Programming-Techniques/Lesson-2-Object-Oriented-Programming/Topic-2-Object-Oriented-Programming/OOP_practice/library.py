@@ -30,7 +30,7 @@ class Library:
                 }
                 for book in self.books
             ]
-            print(f"{book.title} added to Library: ")
+            print(f'Added "{book.title}" to Library:')
             pprint.pprint(books)
         # Add additional copy if book already exist
         else:
@@ -57,35 +57,28 @@ class Library:
         return self.books
 
     def borrow_book(self, isbn):
-        # TODO: If there is one available book remove it from list else if there are multiple available books remove one available copy
-        isbns_available_copies = [
-            {"isbn": book.isbn, "available_copies": book.available_copies}
-            for book in self.books
-        ]
-
-        print(isbns_available_copies)
-
-        for i in isbns_available_copies:
-            print(i, isbn)
-            # TODO: if isbn exist and availabiliy is greater 1 or greater you can borrow
-            print(isbn == i.get("isbn"), i.get("available_copies") >= 1)
-            # TODO: else isbn doesn't exist
-            # TODO: else there are no available copies to borrow
-
-        isbn_numbers = [book.isbn for book in self.books]
-
-        if isbn in isbn_numbers:
-            borrowed_book = self.books.pop(isbn_numbers.index(isbn))
-            book_titles = [book.title for book in self.books]
-            print(f"Borrowed Book: {borrowed_book.title}\nCurrent Books: {book_titles}")
-            return borrowed_book
-        else:
-            print(f"Borrow book current request not available for: {isbn}")
+        """Borrow Book"""
+        for book in self.books:
+            if isbn == book.isbn and book.available_copies >= 1:
+                book.available_copies -= 1
+                print(
+                    f'Borrowed "{book.title}"\nAvailable Copies: {book.available_copies}'
+                )
+            elif book.available_copies == 0:
+                print(
+                    f"Borrowed Book unsuccesful: {book.title}\nAvailable Copies: {book.available_copies}"
+                )
+            elif isbn != book.isbn:
+                print(f"ISBN: {book.isbn} not available")
 
     def return_book(self, isbn):
-        borrowed_book = self.borrow_book(self, isbn)
-        if isbn in borrowed_book:
-            self.books.append(borrowed_book.pop(isbn))
+        """Return Book"""
+        for book in self.books:
+            if isbn == book.isbn:
+                book.available_copies += 1
+                print(
+                    f"Returning Book: {book.title}\nAvailable Copies: {book.available_copies}"
+                )
 
 
 book1 = Book(
@@ -103,32 +96,28 @@ book2 = Book(
 )
 
 print(
-    f"Title: {book1.title}\nAuthor: {book1.author}\nISBN: {book1.isbn}\nAvailable Copies: {book1.available_copies}"
+    f"Title: {book1.title}\nAuthor: {book1.author}\nISBN: {book1.isbn}\nAvailable Copies: {book1.available_copies}\n"
 )
-print()
 
 print(
-    f"Title: {book2.title}\nAuthor: {book2.author}\nISBN: {book2.isbn}\nAvailable Copies: {book2.available_copies}"
+    f"Title: {book2.title}\nAuthor: {book2.author}\nISBN: {book2.isbn}\nAvailable Copies: {book2.available_copies}\n"
 )
-print()
 
 library = Library()
 library.add_book(book1)
 print()
+
 library.display_books()
 print()
 
 library.add_book(book2)
 print()
-library.display_books()
-print()
 
-library.add_book(book2)
-print()
 library.display_books()
 print()
 
 library.borrow_book("978-0743273565")
 print()
-library.display_books()
+
+library.return_book("978-0743273565")
 print()
