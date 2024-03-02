@@ -58,6 +58,11 @@ class Library:
 
     def borrow_book(self, isbn):
         """Borrow Book"""
+        book_isbn = [book.isbn for book in self.books]
+
+        if isbn not in book_isbn:
+            print(f"ISBN: {isbn} not available")
+
         for book in self.books:
             if isbn == book.isbn and book.available_copies >= 1:
                 book.available_copies -= 1
@@ -68,8 +73,6 @@ class Library:
                 print(
                     f"Borrowed Book unsuccesful: {book.title}\nAvailable Copies: {book.available_copies}"
                 )
-            elif isbn != book.isbn:
-                print(f"ISBN: {book.isbn} not available")
 
     def return_book(self, isbn):
         """Return Book"""
