@@ -125,16 +125,16 @@ def battle_royale(participants):
 
     turn = random.randint(0, 100)
 
-    heros = []
+    heroes = []
     villains = []
 
     for char in list(random.sample(participants, 8)):
         if type(char) == Hero:
-            heros.append(char)
+            heroes.append(char)
         else:
             villains.append(char)
 
-    char1, char2, char3, char4, char5, char6, char7, char8 = heros + villains
+    char1, char2, char3, char4, char5, char6, char7, char8 = heroes + villains
 
     while (
         char1.is_alive()
@@ -151,40 +151,28 @@ def battle_royale(participants):
         )
 
         if turn % 2 == 0:
-            char1.attack(char5)
-            char2.attack(char6)
-            char3.attack(char7)
-            char4.attack(char8)
+            for count, char in enumerate(heroes):
+                char.attack(villains[count])
         else:
-            char5.attack(char1)
-            char6.attack(char2)
-            char7.attack(char3)
-            char8.attack(char4)
+            for count, char in enumerate(villains):
+                char.attack(heroes[count])
         turn += 1
 
         if turn % 3 == 0:
-            char5.attack(char1)
-            char6.attack(char2)
-            char7.attack(char3)
-            char8.attack(char4)
+            for count, char in enumerate(villains):
+                char.attack(heroes[count])
         else:
-            char1.attack(char5)
-            char2.attack(char6)
-            char3.attack(char7)
-            char4.attack(char8)
+            for count, char in enumerate(heroes):
+                char.attack(villains[count])
         turn += 1
 
         if turn % 2 == 0:
-            char1.heal()
-            char2.heal()
-            char3.heal()
-            char4.heal()
+            for char in heroes:
+                char.heal()
 
         if turn % 3 == 0:
-            char5.poison_attack(char1)
-            char6.poison_attack(char2)
-            char7.poison_attack(char3)
-            char8.poison_attack(char4)
+            for count, char in enumerate(villains):
+                char.poison_attack(heroes[count])
 
     if char1.is_alive() and char2.is_alive() and char3.is_alive() and char4.is_alive():
         print(
