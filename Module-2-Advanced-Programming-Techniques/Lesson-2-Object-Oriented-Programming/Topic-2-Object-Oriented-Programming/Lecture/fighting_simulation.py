@@ -1,3 +1,5 @@
+import random
+
 # ## Character Fighting Loop Problems 🥊
 
 
@@ -81,14 +83,23 @@ def battle(char1, char2):
         print(f"{char2.name} is victorious")
 
 
-spiderman = Hero("Spiderman", 100, 20)
-venom = Villain("Venom", 120, 15)
+spiderman = Hero("Spiderman", 100, 7)
+batman = Hero("Batman", 85, 8)
+onepunch_man = Hero("One Punch Man", 100, 10)
+erin_brockovich = Hero("Erin Brockovich", 75, 8)
+wicked_witch_of_the_west = Hero("Wicked Witch of the West", 85, 5)
 
+venom = Villain("Venom", 90, 8)
+agent_smith = Villain("Agent Smith", 95, 8)
+voldemort = Villain("voldemort", 105, 5)
+pennywise = Villain("Pennywise", 115, 8)
+loki = Villain("Loki", 85, 7)
 
 print(spiderman, "__self__")
 print(venom, "__self__")
 
 battle(spiderman, venom)
+print()
 
 # ## Challenge Problems 🚀
 
@@ -102,9 +113,86 @@ battle(spiderman, venom)
 # ### Challenge 2: Battle Royale 🎯
 # **Task**: Create a function `battle_royale(participants)` where `participants` is a list of `Character` instances. This function should simulate a free-for-all battle where each character randomly chooses another to attack each turn. The battle continues until only one character is left standing.
 
-def battle_royale(participants):
-
 # #### Hint
 # You'll need a way to randomly select targets for each character's attack, ensuring that a character cannot target themselves and only targets alive opponents. After each turn, check if only one character remains alive, and declare them the winner. Consider how the dynamics of multiple participants might affect the implementation of special abilities and strategies.
 
 # ---
+
+print(f"\n {10 * " * "} BATTLE ROYALE {10 * " * "}")
+
+
+def battle_royale(participants):
+
+    turn = random.randint(0, 1000)
+    char1, char2, char3, char4, char5, char6 = random.sample(participants, 6)
+
+    if (
+        type(char1) == Hero
+        and type(char2) == Hero
+        and type(char3) == Hero
+        and type(char4) == Villain
+        and type(char5) == Villain
+        and type(char6) == Villain
+    ):
+        while (
+            char1.is_alive()
+            and char2.is_alive()
+            and char3.is_alive()
+            and char4.is_alive()
+            and char5.is_alive()
+            and char6.is_alive()
+        ):
+            print(f"\n{char1}\n{char2}\n{char3}\n{char4}\n{char5}\n{char6}\n")
+
+            if turn % 2 == 0:
+                char1.attack(char4)
+                char2.attack(char5)
+                char3.attack(char6)
+            else:
+                char4.attack(char1)
+                char5.attack(char2)
+                char6.attack(char3)
+            turn += 1
+
+            if turn % 3 == 0:
+                char4.attack(char1)
+                char5.attack(char2)
+                char6.attack(char3)
+            else:
+                char1.attack(char4)
+                char2.attack(char5)
+                char3.attack(char6)
+            turn += 1
+
+            if turn % 2 == 0:
+                char1.heal()
+                char2.heal()
+                char3.heal()
+                char4.poison_attack(char1)
+                char5.poison_attack(char2)
+                char6.poison_attack(char3)
+
+        if char1.is_alive() and char2.is_alive() and char3.is_alive():
+            print(
+                f"\n🥊 {char1.name}, {char2.name} and {char3.name} are victorious! 🥊"
+            )
+        elif char4.is_alive() and char5.is_alive() and char6.is_alive():
+            print(
+                f"\n🥊 {char4.name}, {char5.name} and {char6.name} are victorious! 🥊"
+            )
+    else:
+        battle_royale(participants)
+
+
+battle_royale(
+    [
+        batman,
+        onepunch_man,
+        erin_brockovich,
+        wicked_witch_of_the_west,
+        agent_smith,
+        voldemort,
+        pennywise,
+        loki,
+    ]
+)
