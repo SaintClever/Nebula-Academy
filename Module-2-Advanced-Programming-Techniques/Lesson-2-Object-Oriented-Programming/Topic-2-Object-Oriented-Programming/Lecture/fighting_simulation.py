@@ -123,65 +123,79 @@ print(f"\n {10 * " * "} BATTLE ROYALE {10 * " * "}")
 
 def battle_royale(participants):
 
-    turn = random.randint(0, 1000)
-    char1, char2, char3, char4, char5, char6 = random.sample(participants, 6)
+    turn = random.randint(0, 100)
 
-    if (
-        type(char1) == Hero
-        and type(char2) == Hero
-        and type(char3) == Hero
-        and type(char4) == Villain
-        and type(char5) == Villain
-        and type(char6) == Villain
+    heros = []
+    villains = []
+
+    for char in list(random.sample(participants, 8)):
+        if type(char) == Hero:
+            heros.append(char)
+        else:
+            villains.append(char)
+
+    char1, char2, char3, char4, char5, char6, char7, char8 = heros + villains
+
+    while (
+        char1.is_alive()
+        and char2.is_alive()
+        and char3.is_alive()
+        and char4.is_alive()
+        and char5.is_alive()
+        and char6.is_alive()
+        and char7.is_alive()
+        and char8.is_alive()
     ):
-        while (
-            char1.is_alive()
-            and char2.is_alive()
-            and char3.is_alive()
-            and char4.is_alive()
-            and char5.is_alive()
-            and char6.is_alive()
-        ):
-            print(f"\n{char1}\n{char2}\n{char3}\n{char4}\n{char5}\n{char6}\n")
+        print(
+            f"\n{char1}\n{char2}\n{char3}\n{char4}\n{char5}\n{char6}\n{char7}\n{char8}\n"
+        )
 
-            if turn % 2 == 0:
-                char1.attack(char4)
-                char2.attack(char5)
-                char3.attack(char6)
-            else:
-                char4.attack(char1)
-                char5.attack(char2)
-                char6.attack(char3)
-            turn += 1
+        if turn % 2 == 0:
+            char1.attack(char5)
+            char2.attack(char6)
+            char3.attack(char7)
+            char4.attack(char8)
+        else:
+            char5.attack(char1)
+            char6.attack(char2)
+            char7.attack(char3)
+            char8.attack(char4)
+        turn += 1
 
-            if turn % 3 == 0:
-                char4.attack(char1)
-                char5.attack(char2)
-                char6.attack(char3)
-            else:
-                char1.attack(char4)
-                char2.attack(char5)
-                char3.attack(char6)
-            turn += 1
+        if turn % 3 == 0:
+            char5.attack(char1)
+            char6.attack(char2)
+            char7.attack(char3)
+            char8.attack(char4)
+        else:
+            char1.attack(char5)
+            char2.attack(char6)
+            char3.attack(char7)
+            char4.attack(char8)
+        turn += 1
 
-            if turn % 2 == 0:
-                char1.heal()
-                char2.heal()
-                char3.heal()
-                char4.poison_attack(char1)
-                char5.poison_attack(char2)
-                char6.poison_attack(char3)
+        if turn % 2 == 0:
+            char1.heal()
+            char2.heal()
+            char3.heal()
+            char4.heal()
 
-        if char1.is_alive() and char2.is_alive() and char3.is_alive():
-            print(
-                f"\n🥊 {char1.name}, {char2.name} and {char3.name} are victorious! 🥊"
-            )
-        elif char4.is_alive() and char5.is_alive() and char6.is_alive():
-            print(
-                f"\n🥊 {char4.name}, {char5.name} and {char6.name} are victorious! 🥊"
-            )
-    else:
-        battle_royale(participants)
+        if turn % 3 == 0:
+            char5.poison_attack(char1)
+            char6.poison_attack(char2)
+            char7.poison_attack(char3)
+            char8.poison_attack(char4)
+
+    if char1.is_alive() and char2.is_alive() and char3.is_alive() and char4.is_alive():
+        print(
+            f"\n🥊 {char1.name}, {char2.name}, {char3.name} and {char4.name} are victorious! 🥊"
+        )
+    elif (
+        char5.is_alive() and char6.is_alive() and char7.is_alive() and char8.is_alive()
+    ):
+        print(
+            f"\n🥊 {char5.name}, {char6.name}, {char7.name} and {char8.name} are victorious! 🥊"
+        )
 
 
 battle_royale(
