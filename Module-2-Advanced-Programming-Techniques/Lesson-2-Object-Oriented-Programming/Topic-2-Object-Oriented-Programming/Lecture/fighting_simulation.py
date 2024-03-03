@@ -125,14 +125,8 @@ def battle_royale(participants):
 
     turn = random.randint(0, 100)
 
-    heroes = []
-    villains = []
-
-    for char in participants:
-        if type(char) == Hero:
-            heroes.append(char)
-        else:
-            villains.append(char)
+    heroes = [char for char in participants if type(char) == Hero]
+    villains = [char for char in participants if type(char) == Villain]
 
     random.shuffle(heroes)
     random.shuffle(villains)
