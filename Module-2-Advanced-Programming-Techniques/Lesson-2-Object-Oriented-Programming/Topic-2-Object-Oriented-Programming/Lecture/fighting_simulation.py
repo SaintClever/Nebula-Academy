@@ -128,11 +128,14 @@ def battle_royale(participants):
     heroes = []
     villains = []
 
-    for char in list(random.sample(participants, 8)):
+    for char in participants:
         if type(char) == Hero:
             heroes.append(char)
         else:
             villains.append(char)
+
+    random.shuffle(heroes)
+    random.shuffle(villains)
 
     char1, char2, char3, char4, char5, char6, char7, char8 = heroes + villains
 
