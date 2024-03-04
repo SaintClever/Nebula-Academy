@@ -1,5 +1,43 @@
-import pprint, random
-from challenges import challenges
+import pprint, random, json
+
+# from challenges import challenges
+
+
+class Competitor:
+    def __init__(self, name, age, endurance, iq, location):
+        self.name = name
+        self.age = age
+        self.endurance = endurance
+        self.iq = iq
+        self.location = location
+
+    def get_competitor_info(self):
+        return {
+            "name": self.name,
+            "age": self.age,
+            "endurance": self.endurance,
+            "iq": self.iq,
+            "location": self.location,
+        }
+
+
+class Team:
+    def __init__(self, team_name, *members):
+        self.team_name = team_name
+        self.members = members
+
+    def get_team_info(self):
+        team = [
+            {
+                "name": member.name,
+                "age": member.age,
+                "endurance": member.endurance,
+                "iq": member.iq,
+                "location": member.location,
+            }
+            for member in self.members
+        ]
+        return {self.team_name: team}
 
 
 class Survivor:
@@ -14,47 +52,28 @@ class Survivor:
         )
         return team_names
 
-    def create_challenge(self):
-        challenge = random.choice(challenges)
-        return challenge
+    def create_challenge(self, *teams):
+        team_names = [team.team_name.title() for team in teams]
+        print(team_names)
+
+        # challenge = random.choice(challenges)
+        # return challenge
+
+        random_game = str(random.randint(0, 123))
+        with open("challenges.json") as challenges:
+            challenge = json.load(challenges)
+            pprint.pprint(challenge[random_game])
 
 
-class Team:
-    def __init__(self, team_name, *members):
-        self.team_name = team_name
-        self.members = members
+nesta = Competitor("Nesta", 30, 75, 100, "Jamaica")
+saint_clever = Competitor("Saint. Clever", 36, 65, 100, "New York")
 
-    def get_team_info(self):
-        team = [
-            {
-                "name": member.name,
-                "age": member.age,
-                "location": member.location,
-            }
-            for member in self.members
-        ]
-        return {self.team_name: team}
+dena = Competitor("Dena", 30, 50, 100, "New York")
+sonya = Competitor("Sonya", 25, 65, 100, "New York")
 
-
-class Competitor:
-    def __init__(self, name, age, location):
-        self.name = name
-        self.age = age
-        self.location = location
-
-    def get_competitor_info(self):
-        return {"name": self.name, "age": self.age, "location": self.location}
-
-
-nesta = Competitor("Nesta", 30, "Jamaica")
-saint_clever = Competitor("Saint. Clever", 36, "New York")
-
-dena = Competitor("Dena", 30, "New York")
-sonya = Competitor("Sonya", 25, "New York")
-
-frylock = Competitor("Frylock", 55, "South New Jersey")
-meatwad = Competitor("Meatwad", 38, "South New Jersey")
-master_shake = Competitor("Master Shake", 38, "South New Jersey")
+frylock = Competitor("Frylock", 55, 50, 100, "South New Jersey")
+meatwad = Competitor("Meatwad", 38, 100, 100, "South New Jersey")
+master_shake = Competitor("Master Shake", 38, 70, 100, "South New Jersey")
 
 team_titan = Team("titan", nesta, saint_clever)
 pprint.pprint(team_titan.get_team_info())
@@ -72,4 +91,4 @@ survivor = Survivor("b", "c")
 print(survivor.show_teams(team_titan, team_mighty_ducks, aqua_teen_hunger_force))
 print()
 
-print(survivor.create_challenge())
+print(survivor.create_challenge(team_titan, team_mighty_ducks, aqua_teen_hunger_force))
