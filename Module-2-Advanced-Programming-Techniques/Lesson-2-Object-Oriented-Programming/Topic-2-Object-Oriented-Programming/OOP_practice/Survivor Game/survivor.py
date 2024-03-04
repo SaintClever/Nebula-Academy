@@ -52,17 +52,21 @@ class Survivor:
         )
         return team_names
 
-    def create_challenge(self, *teams):
-        team_names = [team.team_name.title() for team in teams]
-        print(team_names)
-
-        # challenge = random.choice(challenges)
-        # return challenge
-
+    def create_challenge(self):
         random_game = str(random.randint(0, 123))
+
         with open("challenges.json") as challenges:
             challenge = json.load(challenges)
-            pprint.pprint(challenge[random_game])
+            challenge.get(random_game)[0]["difficulty"] = random.randint(100, 1000)
+
+        return challenge.get(random_game)[0]
+
+    def battle(self, *teams):
+
+        for team in teams:
+            print(team.team_name)
+            for competitor in team.members:
+                print(competitor.name, competitor.endurance, competitor.iq)
 
 
 nesta = Competitor("Nesta", 30, 75, 100, "Jamaica")
@@ -91,4 +95,8 @@ survivor = Survivor("b", "c")
 print(survivor.show_teams(team_titan, team_mighty_ducks, aqua_teen_hunger_force))
 print()
 
-print(survivor.create_challenge(team_titan, team_mighty_ducks, aqua_teen_hunger_force))
+print(survivor.create_challenge())
+print()
+
+print(survivor.battle(team_titan, team_mighty_ducks, aqua_teen_hunger_force))
+print()
