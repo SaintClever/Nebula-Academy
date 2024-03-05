@@ -58,6 +58,7 @@ print()
 queens_library.display_books()
 print()
 
+print("HELLO")
 queens_library.add_book(book2)
 print()
 

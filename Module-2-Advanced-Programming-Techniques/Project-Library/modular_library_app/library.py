@@ -1,4 +1,4 @@
-import pprint
+import pprint, json
 
 
 class Library:
@@ -25,6 +25,11 @@ class Library:
                     }
                     for book in self.books
                 ]
+
+                # Write to json
+                with open("books.json", "w") as file:
+                    json.dump(books, file, indent=4)
+
                 print(f'Added "{book.title}" to Library:')
                 pprint.pprint(books)
             else:
@@ -51,6 +56,12 @@ class Library:
             }
             for book in self.books
         ]
+
+        # Read from json
+        with open("books.json", "r") as file:
+            file = json.load(file)
+            pprint.pprint(file)
+
         print(f"Display current books available: ")
         pprint.pprint(books)
         return self.books
