@@ -84,6 +84,25 @@ class Library:
                 )
 
 
+class Member(Library):
+    def __init__(self, name, library_id, books: list = []):
+        self.name = name
+        self.library_id = library_id
+        self.books = books
+
+    def add_book(self, book):
+        print(f"Book added from: Name: {self.name} | Library ID: {self.library_id}")
+        super().add_book(book)
+
+    def borrow_book(self, isbn):
+        print(f"Book borrowed from: Name: {self.name} | Library ID: {self.library_id}")
+        super().borrow_book(isbn)
+
+    def return_book(self, isbn):
+        print(f"Book returned from: {self.name} | Library ID: {self.library_id}")
+        super().return_book(isbn)
+
+
 book1 = Book(
     title="The Great Gatsby",
     author="F. Scott Fitzgerald",
@@ -96,6 +115,13 @@ book2 = Book(
     author="Harper Lee",
     isbn="978-0061120084",
     available_copies=3,
+)
+
+book3 = Book(
+    title="A Smarter Way to Learn Python: Learn it faster. Remember it longer.",
+    author="Mark Myers",
+    isbn="978-1974431472",
+    available_copies=7,
 )
 
 print(
@@ -116,6 +142,9 @@ print()
 library.add_book(book2)
 print()
 
+library.add_book(book3)
+print()
+
 library.display_books()
 print()
 
@@ -124,3 +153,9 @@ print()
 
 library.return_book("978-0743273565")
 print()
+
+saint_clever = Member("Saint. Clever", "867-5309")
+saint_clever.borrow_book("978-1974431472")
+saint_clever.return_book("978-1974431472")
+
+library.display_books()
