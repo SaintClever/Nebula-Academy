@@ -2,7 +2,7 @@ import pprint
 
 
 class Book:
-    def __init__(self, title, author, isbn, available_copies):
+    def __init__(self, title, author, isbn, available_copies=1):
         self.title = title
         self.author = author
         self.isbn = isbn
@@ -20,18 +20,23 @@ class Library:
         """Add Book"""
         # Add new book
         if book not in self.books:
-            self.books.append(book)
-            books = [
-                {
-                    "title": book.title,
-                    "author": book.author,
-                    "isbn": book.isbn,
-                    "available_copies": book.available_copies,
-                }
-                for book in self.books
-            ]
-            print(f'Added "{book.title}" to Library:')
-            pprint.pprint(books)
+            if book.available_copies > 0:
+                self.books.append(book)
+                books = [
+                    {
+                        "title": book.title,
+                        "author": book.author,
+                        "isbn": book.isbn,
+                        "available_copies": book.available_copies,
+                    }
+                    for book in self.books
+                ]
+                print(f'Added "{book.title}" to Library:')
+                pprint.pprint(books)
+            else:
+                print(
+                    f"No available copies for {book.author}'s {book.title}: {book.available_copies}"
+                )
         # Add additional copy if book already exist
         else:
             book.available_copies += 1
@@ -119,6 +124,13 @@ book3 = Book(
     available_copies=7,
 )
 
+book4 = Book(
+    title="Candide",
+    author="Voltaire",
+    isbn="978-0486266893",
+    available_copies=2,
+)
+
 print(
     f"Title: {book1.title}\nAuthor: {book1.author}\nISBN: {book1.isbn}\nAvailable Copies: {book1.available_copies}\n"
 )
@@ -159,4 +171,13 @@ library.borrow_book("978-1974431472", saint_clever)
 print()
 
 library.return_book("978-1974431472", saint_clever)
+print()
+
+library.display_books()
+print()
+
+library.add_book(book4)
+print()
+
+library.display_books()
 print()
