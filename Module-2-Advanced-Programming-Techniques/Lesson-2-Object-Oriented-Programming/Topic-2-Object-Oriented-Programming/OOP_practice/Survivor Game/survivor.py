@@ -54,7 +54,6 @@ class Survivor:
 
     def create_challenge(self):
         random_game = str(random.randint(0, 123))
-
         with open("challenges.json") as challenges:
             challenge = json.load(challenges)
             challenge.get(random_game)[0]["difficulty"] = random.randint(100, 1000)
@@ -62,11 +61,16 @@ class Survivor:
         return challenge.get(random_game)[0]
 
     def battle(self, *teams):
-
         for team in teams:
             print(team.team_name)
             for competitor in team.members:
                 print(competitor.name, competitor.endurance, competitor.iq)
+
+    def exile(self):
+        return ...
+
+    def counsel(self):
+        return ...
 
 
 nesta = Competitor("Nesta", 30, 75, 100, "Jamaica")
