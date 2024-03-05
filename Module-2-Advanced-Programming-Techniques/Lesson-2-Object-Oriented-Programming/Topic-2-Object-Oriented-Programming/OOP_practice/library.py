@@ -14,9 +14,11 @@ class Book:
 
 class Library:
     def __init__(
-        self, name
+        self, name, number: str | None = None, address: str | None = None
     ):  # If you set list = [] here all libraries will share the same books
         self.name = print(f"\n===== Welcome to {name.title()} =====\n")
+        self.number = print(f"{name.title()} Number: {number}")
+        self.addres = print(f"{name.title()} Address: {address}")
         self.books: list = []  # All libraries have different books
 
     def add_book(self, book):
@@ -151,12 +153,12 @@ print()
 manhattan_library.display_books()
 print()
 
-
-queens_library = Library("Queens Library")
+queens_library = Library("Queens Library", "718-555-8888")
 queens_library.add_book(book3)
 queens_library.add_book(book3)
 queens_library.add_book(book4)
 queens_library.name
+queens_library.number
 print()
 
 queens_library.display_books()
