@@ -56,8 +56,9 @@ class Library:
         pprint.pprint(books)
         return self.books
 
-    def borrow_book(self, isbn):
+    def borrow_book(self, isbn, member):
         """Borrow Book"""
+        print(member.borrowed_from())
         book_isbn = [book.isbn for book in self.books]
 
         if isbn not in book_isbn:
@@ -74,8 +75,9 @@ class Library:
                     f"Borrowed Book unsuccesful: {book.title}\nAvailable Copies: {book.available_copies}"
                 )
 
-    def return_book(self, isbn):
+    def return_book(self, isbn, member):
         """Return Book"""
+        print(member.returned_from())
         for book in self.books:
             if isbn == book.isbn:
                 book.available_copies += 1
@@ -84,23 +86,16 @@ class Library:
                 )
 
 
-class Member(Library):
-    def __init__(self, name, library_id, books: list = []):
+class Member:
+    def __init__(self, name, library_id):
         self.name = name
         self.library_id = library_id
-        self.books = books
 
-    def add_book(self, book):
-        print(f"Book added from: Name: {self.name} | Library ID: {self.library_id}")
-        super().add_book(book)
+    def borrowed_from(self):
+        return f"Book borrowed from: Name: {self.name} | Library ID: {self.library_id}"
 
-    def borrow_book(self, isbn):
-        print(f"Book borrowed from: Name: {self.name} | Library ID: {self.library_id}")
-        super().borrow_book(isbn)
-
-    def return_book(self, isbn):
-        print(f"Book returned from: {self.name} | Library ID: {self.library_id}")
-        super().return_book(isbn)
+    def returned_from(self):
+        return f"Book returned from: {self.name} | Library ID: {self.library_id}"
 
 
 book1 = Book(
@@ -142,20 +137,26 @@ print()
 library.add_book(book2)
 print()
 
+library.display_books()
+print()
+
 library.add_book(book3)
 print()
 
 library.display_books()
 print()
 
-library.borrow_book("978-0743273565")
-print()
-
-library.return_book("978-0743273565")
-print()
-
+nesta = Member("Nesta", "903-5768")
 saint_clever = Member("Saint. Clever", "867-5309")
-saint_clever.borrow_book("978-1974431472")
-saint_clever.return_book("978-1974431472")
 
-library.display_books()
+library.borrow_book("978-0743273565", nesta)
+print()
+
+library.return_book("978-0743273565", nesta)
+print()
+
+library.borrow_book("978-1974431472", saint_clever)
+print()
+
+library.return_book("978-1974431472", saint_clever)
+print()
