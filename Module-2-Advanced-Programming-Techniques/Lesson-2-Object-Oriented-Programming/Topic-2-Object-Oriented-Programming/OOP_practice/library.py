@@ -2,7 +2,7 @@ import pprint
 
 
 class Book:
-    def __init__(self, title, author, isbn, available_copies=1):
+    def __init__(self, title, author, isbn, available_copies: int = 1):
         self.title = title
         self.author = author
         self.isbn = isbn
@@ -13,8 +13,11 @@ class Book:
 
 
 class Library:
-    def __init__(self, books: list = []):
-        self.books = books
+    def __init__(
+        self, name
+    ):  # If you set list = [] here all libraries will share the same books
+        self.name = print(f"\n===== Welcome to {name.title()} =====\n")
+        self.books: list = []  # All libraries have different books
 
     def add_book(self, book):
         """Add Book"""
@@ -139,45 +142,58 @@ print(
     f"Title: {book2.title}\nAuthor: {book2.author}\nISBN: {book2.isbn}\nAvailable Copies: {book2.available_copies}\n"
 )
 
-library = Library()
-library.add_book(book1)
+manhattan_library = Library("Manhattan Library")
+manhattan_library.add_book(book1)
+manhattan_library.add_book(book2)
+manhattan_library.name
 print()
 
-library.display_books()
+manhattan_library.display_books()
 print()
 
-library.add_book(book2)
+
+queens_library = Library("Queens Library")
+queens_library.add_book(book3)
+queens_library.add_book(book3)
+queens_library.add_book(book4)
+queens_library.name
 print()
 
-library.display_books()
+queens_library.display_books()
 print()
 
-library.add_book(book3)
+queens_library.add_book(book2)
 print()
 
-library.display_books()
+queens_library.display_books()
+print()
+
+queens_library.add_book(book3)
+print()
+
+queens_library.display_books()
 print()
 
 nesta = Member("Nesta", "903-5768")
 saint_clever = Member("Saint. Clever", "867-5309")
 
-library.borrow_book("978-0743273565", nesta)
+queens_library.borrow_book("978-0743273565", nesta)
 print()
 
-library.return_book("978-0743273565", nesta)
+queens_library.return_book("978-0743273565", nesta)
 print()
 
-library.borrow_book("978-1974431472", saint_clever)
+queens_library.borrow_book("978-1974431472", saint_clever)
 print()
 
-library.return_book("978-1974431472", saint_clever)
+queens_library.return_book("978-1974431472", saint_clever)
 print()
 
-library.display_books()
+queens_library.display_books()
 print()
 
-library.add_book(book4)
+queens_library.add_book(book4)
 print()
 
-library.display_books()
+queens_library.display_books()
 print()
