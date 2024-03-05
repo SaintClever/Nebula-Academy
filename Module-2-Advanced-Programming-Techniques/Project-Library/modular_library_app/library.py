@@ -26,6 +26,7 @@ class Library:
                     for book in self.books
                 ]
 
+                """ JSON """
                 # Write to json
                 with open("books.json", "w") as file:
                     json.dump(books, file, indent=4)
@@ -57,10 +58,10 @@ class Library:
             for book in self.books
         ]
 
-        # Read from json
+        """ JSON """
         with open("books.json", "r") as file:
-            file = json.load(file)
-            pprint.pprint(file)
+            books = json.load(file)
+        print(books)
 
         print(f"Display current books available: ")
         pprint.pprint(books)
@@ -84,6 +85,28 @@ class Library:
                 print(
                     f"Borrowed Book unsuccesful: {book.title}\nAvailable Copies: {book.available_copies}"
                 )
+        
+        """ JSON """
+        with open("books.json", "r") as file:
+            books = json.load(file)
+        book_isbn = [book.get("isbn") for book in books]
+
+        if isbn not in book_isbn:
+            print(f"ISBN: {isbn} not available")
+
+        for book in books:
+            if isbn == book.get("isbn") and book.get("available_copies") >= 1:
+                book["available_copies"] -= 1
+                # Update json available_copies
+                with open("books.json", "w") as file:
+                    json.dump(books, file, indent=4)
+                print(
+                    f'Borrowed "{book.get("title")}"\nAvailable Copies: {book.get("available_copies")}'
+                )
+            elif book["available_copies"] == 0:
+                print(
+                    f"Borrowed Book unsuccesful: {book.get("title")}\nAvailable Copies: {book.get("available_copies")}"
+                )
 
     def return_book(self, isbn, member):
         """Return Book"""
@@ -93,4 +116,18 @@ class Library:
                 book.available_copies += 1
                 print(
                     f"Returning Book: {book.title}\nAvailable Copies: {book.available_copies}"
+                )
+
+        """ JSON """
+        with open('books.json', 'r') as file:
+            books = json.load(file)
+        
+        for book in books:
+            if isbn == book.get('isbn'):
+                book["available_copies"] += 1
+                # Update json available_copies
+                with open("books.json", "w") as file:
+                    json.dump(books, file, indent=4)
+                print(
+                    f"Returning Book: {book.get("title")}\nAvailable Copies: {book.get("available_copies")}"
                 )
