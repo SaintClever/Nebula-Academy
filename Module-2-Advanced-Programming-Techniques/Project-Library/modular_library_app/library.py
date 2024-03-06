@@ -176,14 +176,14 @@ class Library:
         with open('books.json', 'r') as file:
             books = json.load(file)
             
-        emove_this_book = None
+        remove_this_book = None
         for book in books:
             if isbn == book.get('isbn'):
-                emove_this_book = book
+                remove_this_book = book
                 break
         
-        if emove_this_book:
-            book_index = books.index(emove_this_book)
+        if remove_this_book:
+            book_index = books.index(remove_this_book)
             book_popped = books.pop(book_index)
 
             print(f"Removed book:")
