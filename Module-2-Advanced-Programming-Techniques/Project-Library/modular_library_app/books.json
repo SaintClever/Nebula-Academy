@@ -16,5 +16,11 @@
         "author": "Harper Lee",
         "isbn": "978-0061120084",
         "available_copies": 3
+    },
+    {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "isbn": "978-0061122415",
+        "available_copies": 5
     }
 ]

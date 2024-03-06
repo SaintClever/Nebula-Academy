@@ -107,11 +107,11 @@ print()
 queens_library.display_books()
 print()
 
-queens_library.remove_book("978-0061122415")
+queens_library.remove_book("978-0486266893")
 print()
 
 queens_library.display_books()
 print()
 
-# queens_library.remove_book("978-0061122415")
-# print()
+queens_library.remove_book("978-0486266893")
+print()
