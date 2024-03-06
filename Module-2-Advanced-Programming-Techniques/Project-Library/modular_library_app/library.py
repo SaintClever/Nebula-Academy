@@ -143,6 +143,7 @@ class Library:
         for book in self.books:
             if isbn == book.isbn:
                 remove_this_book = book
+                break
 
         if remove_this_book:
             book_index = self.books.index(remove_this_book)
@@ -179,6 +180,7 @@ class Library:
         for book in books:
             if isbn == book.get('isbn'):
                 emove_this_book = book
+                break
         
         if emove_this_book:
             book_index = books.index(emove_this_book)
