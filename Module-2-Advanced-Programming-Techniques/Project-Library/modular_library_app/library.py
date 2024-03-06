@@ -138,6 +138,7 @@ class Library:
 
 
     def remove_book(self, isbn):
+        """ REMOVE BOOK """
         remove_this_book = None
         for book in self.books:
             if isbn == book.isbn:
