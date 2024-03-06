@@ -10,8 +10,9 @@ class Library:
         self.addres = print(f"{name.title()} Address: {address}")
         self.books: list = []  # All libraries have different books
 
+
     def add_book(self, book):
-        """Add Book"""
+        """ ADD BOOK """
         # Add new book
         if book not in self.books:
             if book.available_copies > 0:
@@ -46,8 +47,9 @@ class Library:
 
         return self.books
 
+
     def display_books(self):
-        """Display Books"""
+        """ DISPLAY BOOKS """
         books = [
             {
                 "title": book.title,
@@ -67,8 +69,9 @@ class Library:
         pprint.pprint(books)
         return self.books
 
+
     def borrow_book(self, isbn, member):
-        """Borrow Book"""
+        """ BORROW BOOK """
         print(member.borrowed_from())
         book_isbn = [book.isbn for book in self.books]
 
@@ -108,8 +111,9 @@ class Library:
                     f"Borrowed Book unsuccesful: {book.get("title")}\nAvailable Copies: {book.get("available_copies")}"
                 )
 
+
     def return_book(self, isbn, member):
-        """Return Book"""
+        """ RETURN BOOK """
         print(member.returned_from())
         for book in self.books:
             if isbn == book.isbn:
@@ -131,3 +135,66 @@ class Library:
                 print(
                     f"Returning Book: {book.get("title")}\nAvailable Copies: {book.get("available_copies")}"
                 )
+
+    def remove_book(self, isbn):
+        # for book in self.books:
+        #     if isbn == book.isbn:
+        #         book_index = self.books.index(book)
+        #         book_popped = self.books.pop(book_index)
+
+        #         print(f"Removed book:")
+        #         print({
+        #             "title": book_popped.title,
+        #             "author": book_popped.author,
+        #             "isbn": book_popped.isbn,
+        #             "available_copies": book_popped.available_copies,
+        #             })
+                
+        #         books = [
+        #             {
+        #                 "title": book.title,
+        #                 "author": book.author,
+        #                 "isbn": book.isbn,
+        #                 "available_copies": book.available_copies,
+        #             }
+        #             for book in self.books
+        #         ]
+
+        #         pprint.pprint(books)
+        #         return books
+        # return print(f'No removal of: {book.isbn}')
+                
+
+        """ JSON """
+        with open('books.json', 'r') as file:
+            books = json.load(file)
+            
+        for book in books:
+            if isbn == book.get('isbn'):
+                book_index = books.index(book)
+                book_popped = books.pop(book_index)
+
+                print(f"Removed book:")
+                print({
+                    "title": book_popped.get("title"),
+                    "author": book_popped.get("author"),
+                    "isbn": book_popped.get("isbn"),
+                    "available_copies": book_popped.get("available_copies"),
+                    })
+                
+                books = [
+                    {
+                        "title": book.get("title"),
+                        "author": book.get("author"),
+                        "isbn": book.get("isbn"),
+                        "available_copies": book.get("available_copies"),
+                    }
+                    for book in books
+                ]
+
+                with open('books.json', 'w') as file:
+                    json.dump(books, file, indent=4)
+
+                pprint.pprint(books)
+                return books
+        return print(f'No removal of: {book.get('isbn')}')

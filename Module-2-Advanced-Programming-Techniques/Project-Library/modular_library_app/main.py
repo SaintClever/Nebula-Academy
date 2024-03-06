@@ -30,6 +30,13 @@ book4 = Book(
     available_copies=2,
 )
 
+book5 = Book(
+    title="The Alchemist",
+    author="Paulo Coelho",
+    isbn="978-0061122415",
+    available_copies=5,
+)
+
 print(
     f"Title: {book1.title}\nAuthor: {book1.author}\nISBN: {book1.isbn}\nAvailable Copies: {book1.available_copies}\n"
 )
@@ -93,3 +100,18 @@ print()
 
 queens_library.display_books()
 print()
+
+queens_library.add_book(book5)
+print()
+
+queens_library.display_books()
+print()
+
+queens_library.remove_book("978-0061122415")
+print()
+
+queens_library.display_books()
+print()
+
+# queens_library.remove_book("978-0061122415")
+# print()
