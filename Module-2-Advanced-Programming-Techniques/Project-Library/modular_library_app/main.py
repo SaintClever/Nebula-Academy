@@ -79,51 +79,62 @@ print()
 
 nesta = Member("Nesta", "903-5768")
 saint_clever = Member("Saint. Clever", "867-5309")
+devon_smillie = Member("Devon Smillie", "849-1984")
 
 queens_library.add_member(nesta)
-print()
-
-manhattan_library.add_member(saint_clever)
 print()
 
 queens_library.add_member(saint_clever)
 print()
 
+manhattan_library.add_member(nesta)
+print()
+
+manhattan_library.add_member(saint_clever)
+print()
+
+manhattan_library.add_member(devon_smillie)
+print()
+
 queens_library.display_members()
 print()
 
-queens_library.borrow_book("978-0743273565", nesta)
+manhattan_library.display_members()
 print()
 
-queens_library.return_book("978-0743273565", nesta)
-print()
 
-queens_library.borrow_book("978-1974431472", saint_clever)
-print()
+# queens_library.borrow_book("978-0743273565", nesta)
+# print()
 
-queens_library.return_book("978-1974431472", saint_clever)
-print()
+# queens_library.return_book("978-0743273565", nesta)
+# print()
 
-queens_library.display_books()
-print()
+# queens_library.borrow_book("978-1974431472", saint_clever)
+# print()
 
-queens_library.add_book(book4)
-print()
+# queens_library.return_book("978-1974431472", saint_clever)
+# print()
 
-queens_library.display_books()
-print()
+# queens_library.display_books()
+# print()
 
-queens_library.add_book(book5)
-print()
+# queens_library.add_book(book4)
+# print()
 
-queens_library.display_books()
-print()
+# queens_library.display_books()
+# print()
 
-queens_library.remove_book("978-0486266893")
-print()
+# queens_library.add_book(book5)
+# print()
 
-queens_library.display_books()
-print()
+# queens_library.display_books()
+# print()
 
-queens_library.remove_book("978-0486266893")
-print()
+# queens_library.remove_book("978-0486266893")
+# print()
+
+# queens_library.display_books()
+# print()
+
+# queens_library.remove_book("978-0486266893")
+# print()

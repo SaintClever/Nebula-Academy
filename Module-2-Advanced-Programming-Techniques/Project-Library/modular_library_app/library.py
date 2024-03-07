@@ -217,15 +217,19 @@ class Library:
         """ ADD MEMBERS """
         if member not in self.members:
             self.members.append(member)
-            print(f'New member added: Welcome {self.name} {member.name}!')
-            print([{"name": member.name, "library_id": member.library_id} for member in self.members])
-            return [{"name": member.name, "library_id": member.library_id} for member in self.members]
+            print(f'New member added: Welcome to {self.name} {member.name}!')
+            all_members = [{"name": member.name, "library_id": member.library_id} for member in self.members]
+            print(all_members)
+
+            with open(f'{self.name.replace(' ', '_').lower()}_members.json', 'w') as file:
+                json.dump(all_members, file, indent=4)
+            return all_members
         else:
             print(f'{member.name} already added')
 
 
     def display_members(self):
         """ DISPLAY MEMBERS """
-        print("Display Members:")
+        print(f"{self.name} Members:")
         for members in self.members:
             print(f"Name: {members.name}\nLibrary ID: {members.library_id}\n")
