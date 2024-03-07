@@ -80,6 +80,18 @@ print()
 nesta = Member("Nesta", "903-5768")
 saint_clever = Member("Saint. Clever", "867-5309")
 
+queens_library.add_member(nesta)
+print()
+
+manhattan_library.add_member(saint_clever)
+print()
+
+queens_library.add_member(saint_clever)
+print()
+
+queens_library.display_members()
+print()
+
 queens_library.borrow_book("978-0743273565", nesta)
 print()
 

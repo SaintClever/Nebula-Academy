@@ -5,10 +5,11 @@ class Library:
     def __init__(
         self, name, number: str | None = None, address: str | None = None
     ):  # If you set list = [] here all libraries will share the same books
-        self.name = print(f"\n===== Welcome to {name.title()} =====\n")
-        self.number = print(f"{name.title()} Number: {number}")
-        self.addres = print(f"{name.title()} Address: {address}")
+        self.name = name.title()
+        self.number = name.title() and number
+        self.addres = name.title() and address
         self.books: list = []  # All libraries have different books
+        self.members: list = []
 
 
     def add_book(self, book):
@@ -210,3 +211,21 @@ class Library:
             print(f'\n{books}')
         else:
             print(f'No removal of: {book.get('isbn')}')
+
+
+    def add_member(self, member):
+        """ ADD MEMBERS """
+        if member not in self.members:
+            self.members.append(member)
+            print(f'New member added: Welcome {self.name} {member.name}!')
+            print([{"name": member.name, "library_id": member.library_id} for member in self.members])
+            return [{"name": member.name, "library_id": member.library_id} for member in self.members]
+        else:
+            print(f'{member.name} already added')
+
+
+    def display_members(self):
+        """ DISPLAY MEMBERS """
+        print("Display Members:")
+        for members in self.members:
+            print(f"Name: {members.name}\nLibrary ID: {members.library_id}\n")
