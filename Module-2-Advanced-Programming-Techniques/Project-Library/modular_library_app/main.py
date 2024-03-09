@@ -103,38 +103,38 @@ manhattan_library.display_members()
 print()
 
 
-# queens_library.borrow_book("978-0743273565", nesta)
-# print()
+queens_library.borrow_book("978-0743273565", nesta)
+print()
 
-# queens_library.return_book("978-0743273565", nesta)
-# print()
+queens_library.return_book("978-0743273565", nesta)
+print()
 
-# queens_library.borrow_book("978-1974431472", saint_clever)
-# print()
+queens_library.borrow_book("978-1974431472", saint_clever)
+print()
 
-# queens_library.return_book("978-1974431472", saint_clever)
-# print()
+queens_library.return_book("978-1974431472", saint_clever)
+print()
 
-# queens_library.display_books()
-# print()
+queens_library.display_books()
+print()
 
-# queens_library.add_book(book4)
-# print()
+queens_library.add_book(book4)
+print()
 
-# queens_library.display_books()
-# print()
+queens_library.display_books()
+print()
 
-# queens_library.add_book(book5)
-# print()
+queens_library.add_book(book5)
+print()
 
-# queens_library.display_books()
-# print()
+queens_library.display_books()
+print()
 
-# queens_library.remove_book("978-0486266893")
-# print()
+queens_library.remove_book("978-0486266893")
+print()
 
-# queens_library.display_books()
-# print()
+queens_library.display_books()
+print()
 
-# queens_library.remove_book("978-0486266893")
-# print()
+queens_library.remove_book("978-0486266893")
+print()
