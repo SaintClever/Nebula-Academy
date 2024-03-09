@@ -6,7 +6,7 @@
 
 
 def maskify(cc) -> str:
-    return (len(cc) - 4) * "#" + cc[len(cc) - 4 :] if len(cc) > 3 else cc
+    return (len(cc) - 4) * "#" + cc[-4:] if len(cc) > 3 else cc
 
 
 print(maskify("4556364607935616"))  # --> "############5616"
