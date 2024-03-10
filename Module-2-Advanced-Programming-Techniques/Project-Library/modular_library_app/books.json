@@ -3,18 +3,18 @@
         "title": "A Smarter Way to Learn Python: Learn it faster. Remember it longer.",
         "author": "Mark Myers",
         "isbn": "978-1974431472",
-        "available_copies": 8
-    },
-    {
-        "title": "Candide",
-        "author": "Voltaire",
-        "isbn": "978-0486266893",
-        "available_copies": 2
+        "available_copies": 9
     },
     {
         "title": "To Kill a Mockingbird",
         "author": "Harper Lee",
         "isbn": "978-0061120084",
         "available_copies": 3
+    },
+    {
+        "title": "The Alchemist",
+        "author": "Paulo Coelho",
+        "isbn": "978-0061122415",
+        "available_copies": 5
     }
 ]
