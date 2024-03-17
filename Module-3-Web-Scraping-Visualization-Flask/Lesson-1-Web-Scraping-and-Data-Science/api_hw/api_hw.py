@@ -86,9 +86,9 @@ def to_do(id: int| None = None):
     to_do_items = {}
 
     for to_do in to_dos:
-        response = requests.get(f"https://jsonplaceholder.typicode.com/todos/?userId={id}")
-    to_dos =  response.json() if response.status_code == 200 else print("Failed to retrieve data")
-        to_do_items[i] = to_do
+        print(to_do.get('userId'), to_do.get('completed'))
+        # response = requests.get(f"https://jsonplaceholder.typicode.com/todos/?userId={id}")
+        # to_dos =  response.json() if response.status_code == 200 else print("Failed to retrieve data")
 
-    return to_do_items
+    # return to_dos
 pprint.pprint(to_do(1))
