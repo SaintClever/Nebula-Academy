@@ -1,15 +1,31 @@
-import sqlite3
+"""
+Flask-SQLAlchemy
+----------------
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/[YOUR_DATABASE_NAME]'
+db = SQLAlchemy(app)
 
-conn = sqlite3.connect("database.db")
+
+SQLAlchemy
+----------
+from sqlalchemy import create_engine
+engine = create_engine('postgresql://localhost/[YOUR_DATABASE_NAME]')
+"""
+
+import psycopg2
+from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
+
+
+conn = psycopg2.connect(
+    dbname="anonymous", user="anonymous", password="4321PostgreSQL!", host="localhost"
+)
+
+# Set the isolation level for the connection to AUTOCOMMIT
+conn.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
+
 cursor = conn.cursor()
 
-# create table
-cursor.execute("""CREATE TABLE IF NOT EXISTS users
-                (id INTEGER PRIMARY KEY, name TEXT, age INTEGER)""")
-
-
-# insert data into table
-name = input("Name: ")
-age = int(input("Age: "))
-cursor.execute(f"INSERT INTO users (name, age) VALUES (?, ?)", (name, age))
-conn.commit()
+cursor.execute("CREATE DATABASE nebula_academy;")
+cursor.execute("DROP DATABASE IF EXISTS nebula_academy")
