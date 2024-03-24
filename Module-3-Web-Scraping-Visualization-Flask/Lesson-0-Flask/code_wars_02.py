@@ -16,9 +16,12 @@ def duplicate_encode(word) -> str:
 
     # return output
 
-    return "".join(
-        [")" if word.casefold().count(i) > 1 else "(" for i in word.casefold()]
-    )
+    # return "".join(
+    #     [")" if word.casefold().count(i) > 1 else "(" for i in word.casefold()]
+    # )
+
+    word = word.casefold()
+    return "".join([")" if word.count(i) > 1 else "(" for i in word])
 
 
 print(duplicate_encode("din"), "(((")
