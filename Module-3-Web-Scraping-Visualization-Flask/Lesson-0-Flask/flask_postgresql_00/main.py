@@ -19,7 +19,7 @@ from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
 
 conn = psycopg2.connect(
-    dbname="anonymous", user="anonymous", password="4321PostgreSQL!", host="localhost"
+    dbname="anonymous", user="anonymous", password="***************", host="localhost"
 )
 
 # Set the isolation level for the connection to AUTOCOMMIT
