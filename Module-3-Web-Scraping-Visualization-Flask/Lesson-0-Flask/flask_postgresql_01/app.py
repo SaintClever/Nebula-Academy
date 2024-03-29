@@ -44,5 +44,16 @@ def update_user(id):
     return jsonify(data), 204
 
 
+@app.route("/users/<int:id>", methods=["DELETE"])
+def delete_user(id):
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute("DELETE FROM users WHERE id = %s", (id))
+    conn.commit()
+    cur.close()
+    conn.close()
+    return jsonify({"message": "User deleted successfully"}), 204
+
+
 if __name__ == "__main__":
     app.run(debug=True)
