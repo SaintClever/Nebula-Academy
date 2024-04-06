@@ -3,9 +3,11 @@ import requests
 import pandas as pd
 
 
-def codewars(search_item: str):
+def codewars(programming_language: str):
     # Fetch the webpage
-    response = requests.get(f"https://www.codewars.com/kata/search/{search_item}")
+    response = requests.get(
+        f"https://www.codewars.com/kata/search/{programming_language}"
+    )
     html_content = response.text
 
     # Parse the HTML
@@ -37,16 +39,21 @@ def codewars(search_item: str):
         print(link.get("href"))
     print()
 
+    # Find Kyus
     kyu_levels = soup.find_all("div", class_="inner-small-hex is-extra-wide")
-    kyus = [kyu_level.find("span").text.replace(" kyu", "") for kyu_level in kyu_levels]
+    kyus = [
+        int(kyu_level.find("span").text.replace(" kyu", "")) for kyu_level in kyu_levels
+    ]
 
+    # Find Kata names
     kata_names = soup.find_all("a", class_="ml-2")
     kata_titles = [kata_name.text for kata_name in kata_names]
 
+    # Find Completed Katas
     kata_data = soup.find_all("span", class_="mr-0 text-ui-text-lc")
-    completed = [data.text for data in kata_data]
+    completed = [int(data.text.replace(",", "")) for data in kata_data]
 
-    data = {"Kyu": kyus, "Title": kata_titles, "Completed": completed}
+    data = {"kyu": kyus, "title": kata_titles, "completed": completed}
     df = pd.DataFrame(data)
 
     print(df)
@@ -55,11 +62,22 @@ def codewars(search_item: str):
     print(df.head())
     print()
 
-    print(df.max())
+    programming_language = programming_language.capitalize()
+    print("=" * 10, "Based on the FIRST page Codewars.com/kata", "=" * 10)
+    average_kyu = df["kyu"].mean()
+    print(f"Average {programming_language} Kyu rank completed: {int(average_kyu)}")
+
+    average_number_of_people = df["completed"].mean()
+    print(
+        f"Average number of people completing a {programming_language} Kata: {int(average_number_of_people):.2f}"
+    )
+
+    maximum_katas_completed = df["completed"].max()
+    print(f"Maximum {programming_language} Katas completed: {maximum_katas_completed}")
+
+    minimum_katas_completed = df["completed"].min()
+    print(f"Minimum {programming_language} Katas completed: {minimum_katas_completed}")
     print()
 
-    print(df.min())
-    print()
 
-
-codewars("c#")
+codewars("python")
