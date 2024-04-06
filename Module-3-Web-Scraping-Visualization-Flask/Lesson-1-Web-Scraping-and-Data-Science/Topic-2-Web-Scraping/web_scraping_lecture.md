@@ -136,7 +136,7 @@ print(f"Average Price: £{average_price:.2f}")
 
 This example walks you through a complete cycle of scraping data from a web page and analyzing that data using Pandas. It's a foundational skill set for any data scientist or anyone interested in extracting insights from web-based data. Remember to respect websites' terms of service and robots.txt files when scraping.
 
-## Final Project: Scrape and Analyze Website Data 🚀
+##  Project: Scrape and Analyze Website Data 🚀
 
 ### Objective
 
