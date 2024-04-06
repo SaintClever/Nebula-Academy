@@ -63,17 +63,19 @@ def codewars(programming_language: str):
     print()
 
     programming_language = programming_language.capitalize()
-    print("=" * 10, "Based on the FIRST page Codewars.com/kata", "=" * 10)
+    print("=" * 10, "Based on the FIRST page of Codewars.com/kata", "=" * 10)
     average_kyu = df["kyu"].mean()
     print(f"Average {programming_language} Kyu rank completed: {int(average_kyu)}")
 
     average_number_of_people = df["completed"].mean()
     print(
-        f"Average number of people completing a {programming_language} Kata: {int(average_number_of_people):.2f}"
+        f"Average number of people completing a {programming_language} Kata: {int(average_number_of_people):,.2f}"
     )
 
     maximum_katas_completed = df["completed"].max()
-    print(f"Maximum {programming_language} Katas completed: {maximum_katas_completed}")
+    print(
+        f"Maximum {programming_language} Katas completed: {maximum_katas_completed:,}"
+    )
 
     minimum_katas_completed = df["completed"].min()
     print(f"Minimum {programming_language} Katas completed: {minimum_katas_completed}")
