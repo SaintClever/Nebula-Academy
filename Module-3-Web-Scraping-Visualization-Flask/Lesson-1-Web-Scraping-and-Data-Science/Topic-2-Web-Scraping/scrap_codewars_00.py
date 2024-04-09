@@ -82,4 +82,4 @@ def codewars(programming_language: str):
     print()
 
 
-codewars("python")
+codewars("java")
