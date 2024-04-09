@@ -1,4 +1,5 @@
 from collections import Counter
+from pprint import pprint
 from bs4 import BeautifulSoup
 import requests
 import pandas as pd
@@ -23,8 +24,8 @@ def get_quotes(page_numbers: int = 1):
     data = []
 
     for quote in quotes:
-        quotes_ = quote.find("span", class_="text").text
-        authors_ = quote.find("small", class_="author").text
+        quotes_ = quote.find("span", class_="text").text.casefold()
+        authors_ = quote.find("small", class_="author").text.casefold()
         tags_ = ", ".join(
             quote.find("div", class_="tags")
             .text.replace("\n", " ")
@@ -55,5 +56,38 @@ def get_quotes(page_numbers: int = 1):
 
     print()
 
+    return [most_common_word, most_frequently_quoted]
 
-get_quotes(1)
+
+# output = []
+# for i in range(1, 11):
+#     output.append(
+#         {
+#             f"common_word_pg_{i}": Counter(get_quotes(i)[0]).most_common(1)[0][0],
+#             f"common_author_pg_{i}": Counter(get_quotes(i)[1]).most_common(1)[0][0],
+#         }
+#     )
+
+# pprint(output)
+
+
+common_words = []
+common_authors = []
+for i in range(1, 11):
+    common_words.append(Counter(get_quotes(i)[0]).most_common(1)[0][0])
+    common_authors.append(Counter(get_quotes(i)[1]).most_common(1)[0][0])
+
+pprint(
+    {
+        "most_common_word": Counter(common_words).most_common(1)[0],
+        "most_common_author": Counter(common_authors).most_common(1)[0],
+    }
+)
+print()
+
+pprint(
+    {
+        "most_common_words_by_page": common_words,
+        "most_common_authors_by_page": common_authors,
+    }
+)
