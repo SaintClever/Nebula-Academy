@@ -56,23 +56,16 @@ def get_quotes(page_numbers: int = 1):
 
     print()
 
-    return [most_common_word, most_frequently_quoted]
+    return {"common_word": most_common_word, "common_author": most_frequently_quoted}
 
 
-# output = []
-# for i in range(1, 11):
-#     output.append(
-#         {
-#             f"common_word_pg_{i}": Counter(get_quotes(i)[0]).most_common(1)[0][0],
-#             f"common_author_pg_{i}": Counter(get_quotes(i)[1]).most_common(1)[0][0],
-#         }
-#     )
-
-# pprint(output)
-
-
-common_words = [Counter(get_quotes(i)[0]).most_common(1)[0][0] for i in range(1, 11)]
-common_authors = [Counter(get_quotes(i)[1]).most_common(1)[0][0] for i in range(1, 11)]
+common_words = [
+    Counter(get_quotes(i).get("common_word")).most_common(1)[0][0] for i in range(1, 11)
+]
+common_authors = [
+    Counter(get_quotes(i).get("common_author")).most_common(1)[0][0]
+    for i in range(1, 11)
+]
 
 print("==== Most Common Word and Author in general ====")
 pprint(
