@@ -20,28 +20,25 @@ def get_quotes(page_numbers: int = 1):
 
     quotes = soup.find_all("div", class_="quote")
 
-    quotes_ = []
-    authors_ = []
-    tags_ = []
+    data = []
 
     for quote in quotes:
-        quotes_.append(quote.find("span", class_="text").text)
-        authors_.append(quote.find("small", class_="author").text)
-        tags_.append(
-            ", ".join(
-                quote.find("div", class_="tags")
-                .text.replace("\n", " ")
-                .replace("Tags:", "")
-                .strip()
-                .split()
-            )
+        quotes_ = quote.find("span", class_="text").text
+        authors_ = quote.find("small", class_="author").text
+        tags_ = ", ".join(
+            quote.find("div", class_="tags")
+            .text.replace("\n", " ")
+            .replace("Tags:", "")
+            .strip()
+            .split()
         )
+
+        data.append({"quotes": quotes_, "authors": authors_, "tags": tags_})
 
     # print(quotes_)
     # print(authors_)
     # print(tags_)
 
-    data = {"quotes": quotes_, "authors": authors_, "tags": tags_}
     df = pd.DataFrame(data)
     print(df)
     print()
