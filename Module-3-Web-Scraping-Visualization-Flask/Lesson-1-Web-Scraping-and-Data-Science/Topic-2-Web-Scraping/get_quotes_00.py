@@ -41,8 +41,8 @@ def get_quotes(page_numbers: int = 1):
     # print(tags_)
 
     df = pd.DataFrame(data)
-    print(df)
-    print()
+    # print(df)
+    # print()
 
     most_common_word = Counter(" ".join(df.get("quotes")).split())
     print(
@@ -71,12 +71,10 @@ def get_quotes(page_numbers: int = 1):
 # pprint(output)
 
 
-common_words = []
-common_authors = []
-for i in range(1, 11):
-    common_words.append(Counter(get_quotes(i)[0]).most_common(1)[0][0])
-    common_authors.append(Counter(get_quotes(i)[1]).most_common(1)[0][0])
+common_words = [Counter(get_quotes(i)[0]).most_common(1)[0][0] for i in range(1, 11)]
+common_authors = [Counter(get_quotes(i)[1]).most_common(1)[0][0] for i in range(1, 11)]
 
+print("==== Most Common Word and Author in general ====")
 pprint(
     {
         "most_common_word": Counter(common_words).most_common(1)[0],
@@ -85,9 +83,11 @@ pprint(
 )
 print()
 
+print("==== Most common Words and Authors by page ====")
 pprint(
     {
         "most_common_words_by_page": common_words,
         "most_common_authors_by_page": common_authors,
     }
 )
+print()
