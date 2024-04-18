@@ -9,19 +9,18 @@ subjects = ["Math", "English", "Science", "History"]
 scores = [df[subject].values for subject in subjects]
 
 """Generate Box Plots: Create a box plot for each subject to visualize the distribution of scores. Use the basic box plot code provided in the lecture."""
-# print(scores)
-# plt.figure(figsize=(4, 4))
-# plt.boxplot(scores, labels=subjects)
-# plt.title("Studen Performance in Different Subjects")
-# plt.xlabel("Scores")
-# plt.ylabel("Subjects")
-# plt.grid(True)
-# plt.xticks(rotation=45)
-# plt.show()
+plt.figure(figsize=(4, 4))
+plt.boxplot(scores, labels=subjects)
+plt.title("Studen Performance in Different Subjects")
+plt.xlabel("Scores")
+plt.ylabel("Subjects")
+plt.grid(True)
+plt.xticks(rotation=45)
+plt.show()
 
 """ Which subject has the greatest variability in scores? """
 # Calculate the standard deviation for each subject
-std_dev = df[[subject for subject in subjects]].std()
+std_dev = df[subjects].std()
 
 # Plot the standard deviations
 plt.figure(figsize=(4, 4))
@@ -39,7 +38,7 @@ print("Subject with the greatest variability in scores:", greatest_variability)
 
 """ Which subject has the highest median score? """
 # Calculate the median score for each subject
-median_scores = df[[subject for subject in subjects]].median()
+median_scores = df[subjects].median()
 
 # Find the subject with the highest median score
 subject_highest_median = median_scores.idxmax()
@@ -57,7 +56,7 @@ whiskerprops = dict(color="red", linewidth=2)
 capprops = dict(color="green", linewidth=2)
 medianprops = dict(color="orange", linewidth=2)
 
-df[[subject for subject in subjects]].boxplot(
+df[subjects].boxplot(
     boxprops=boxprops,
     whiskerprops=whiskerprops,
     capprops=capprops,
